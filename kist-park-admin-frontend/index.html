@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Impact Article Submission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit an Article for <span>"The Impact"</span></h1>
+        <form id="article-form" class="article-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Article Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="thumbnail">Article Thumbnail:</label>
+                <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="image1">Image 1:</label>
+                <input type="file" id="image1" name="image1" accept="image/*" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="paragraph1">Paragraph 1:</label>
+                <textarea id="paragraph1" name="paragraph1" required></textarea>
+            </div>
+            
+            <!-- Optional Images and Paragraphs -->
+            <div class="form-group">
+                <label for="image2">Image 2 (Optional):</label>
+                <input type="file" id="image2" name="image2" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="paragraph2">Paragraph 2 (Optional):</label>
+                <textarea id="paragraph2" name="paragraph2"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="image3">Image 3 (Optional):</label>
+                <input type="file" id="image3" name="image3" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="paragraph3">Paragraph 3 (Optional):</label>
+                <textarea id="paragraph3" name="paragraph3"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="image4">Image 4 (Optional):</label>
+                <input type="file" id="image4" name="image4" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="paragraph4">Paragraph 4 (Optional):</label>
+                <textarea id="paragraph4" name="paragraph4"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="image5">Image 5 (Optional):</label>
+                <input type="file" id="image5" name="image5" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="paragraph5">Paragraph 5 (Optional):</label>
+                <textarea id="paragraph5" name="paragraph5"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Article</button>
+        </form>
+        <div id="response" class="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

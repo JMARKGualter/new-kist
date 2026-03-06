@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BatStateU KIST Park</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES0PWB5CY5"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-ES0PWB5CY5');
+ </script> -->
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/press-release.css" rel="stylesheet">
+  <link href="blogs-assets/blogs.css" rel="stylesheet">
+
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+
+          <img src="../assets/img/logo.jpg" alt="KIST PARK" style="width: auto; height: 12vh;">
+          <!-- <h1 class="sitename" style="color: darkred">KIST Park</h1> -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <!-- Desktop dropdown (hidden on mobile) -->
+            <li class="nav-item dropdown d-none d-xl-block">
+              <a href="../index.html" class="nav-link" style="display: flex; align-items: center; gap: 5px;">
+                <span>The Technopark</span> <i class="bi bi-chevron-down" style="font-size: 12px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html#ventures-hub">Ventures Hub</a></li>
+                <li><a class="dropdown-item" href="../index.html#design-innovation">Design Innovation Building</a></li>
+                <li><a class="dropdown-item" href="../index.html#technology-hub">Techno Hub</a></li>
+                <li><a class="dropdown-item" href="../index.html#smart-manufacturing">Smart Manufacturing</a></li>
+                <li><a class="dropdown-item" href="../index.html#innovation-hub">Innovation Hub</a></li>
+              </ul>
+            </li>
+
+            <!-- Mobile-only links (hidden on desktop) -->
+            <li class="d-block d-xl-none"><a href="../index.html">The Technopark</a></li>
+            <li class="d-block d-xl-none"><a href="../index.html#ventures-hub" class="ps-4">— Ventures Hub</a></li>
+            <li class="d-block d-xl-none"><a href="../index.html#design-innovation" class="ps-4">— Design Innovation Building</a></li>
+            <li class="d-block d-xl-none"><a href="../index.html#technology-hub" class="ps-4">— Techno Hub</a></li>
+            <li class="d-block d-xl-none"><a href="../index.html#smart-manufacturing" class="ps-4">— Smart Manufacturing</a></li>
+            <li class="d-block d-xl-none"><a href="../index.html#innovation-hub" class="ps-4">— Innovation Hub</a></li>
+
+            <!-- Desktop dropdown (hidden on mobile) -->
+            <li class="nav-item dropdown d-none d-xl-block">
+              <a href="../the-ecosystem.html" class="nav-link" style="display: flex; align-items: center; gap: 5px;">
+                <span>The Ecosystem</span> <i class="bi bi-chevron-down" style="font-size: 12px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../the-ecosystem.html#reasearch-center">Research Center</a></li>
+                <li><a class="dropdown-item" href="../the-ecosystem.html#innovation-center">Innovation Center</a></li>
+              </ul>
+            </li>
+            <!-- Mobile-only links (hidden on desktop) -->
+            <li class="d-block d-xl-none"><a href="../the-ecosystem.html">The Ecosystem</a></li>
+            <li class="d-block d-xl-none"><a href="../the-ecosystem.html#reasearch-center" class="ps-4">— Research Center</a></li>
+            <li class="d-block d-xl-none"><a href="../the-ecosystem.html#innovation-center" class="ps-4">— Innovation Center</a></li>
+
+            <!-- Desktop dropdown (hidden on mobile) -->
+            <li class="nav-item dropdown d-none d-xl-block">
+              <a href="../the-impact.html" class="nav-link active" style="display: flex; align-items: center; gap: 5px;">
+                <span>The Impact</span> <i class="bi bi-chevron-down" style="font-size: 12px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../press-releases.html">Press Releases</a></li>
+                <li><a class="dropdown-item" href="../highlights.html">Highlights</a></li>
+              </ul>
+            </li>
+
+            <!-- Mobile-only links (hidden on desktop) -->
+            <li class="d-block d-xl-none">
+              <a href="../the-impact.html" class="active">The Impact</a>
+            </li>
+            <li class="d-block d-xl-none">
+              <a href="../press-releases.html" class="ps-4">— Press Releases</a>
+            </li>
+            <li class="d-block d-xl-none">
+              <a href="../highlights.html" class="ps-4">— Highlights</a>
+            </li>
+            <li>
+              <h4 style="padding-left: 20px; margin-bottom: 0;">
+                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8"
+                  class="btn position-relative overflow-hidden d-inline-block text-white inquire-btn" style="
+                  background-color: #c60001;
+                  font-size: clamp(18px, 30px);
+                  transition: all 0.3s ease;
+                  padding: 8px;
+                  border-radius: 10px;
+                  ">
+                  Inquire Here
+                </a>
+              </h4>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- <img src="img/1.jpg" alt="" style="width: 100%; height: auto;"></img> -->
+    <div class="blog-content"
+      style="background: linear-gradient(0deg, rgb(255, 255, 255) 30%, rgb(199, 236, 255) 100%); height: auto; max-width: 100%;">
+      <div style="display: flex; align-items: center; gap: 10px; max-width: 1200px; margin: auto;">
+        <div style="color: #ac2626; font-size: clamp(16px, 5vw, 24px); font-weight: bold; text-transform: uppercase;">
+          BLOG</div>
+        <div style="height: 2px; background-color: #ac2626; flex-grow: 1;"></div>
+      </div>
+      <div>
+        <h3 class="blog-title">BatStateU KIST Park: Driving Innovation at BatStateU Alangilan@40</h3>
+      </div>
+
+      <div class="blog-body">
+        <div class="blog-img">
+          <a href="#imagePopup1">
+            <img class="image-popup" src="blogs-assets/blog-img/blog-4-1.jpg" alt="">
+          </a>
+          <div class="blog-sub-img2">
+            <div>
+              <a href="#imagePopup2">
+                <img src="blogs-assets/blog-img/blog-4-2.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#imagePopup3">
+                <img src="blogs-assets/blog-img/blog-4-3.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#imagePopup4">
+                <img src="blogs-assets/blog-img/blog-4-4.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#imagePopup5">
+                <img src="blogs-assets/blog-img/blog-4-5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <span>
+              <i class="bi bi-calendar-event-fill"></i> Dec. 17, 2024
+            </span>
+            <span>
+              <i class="bi bi-geo-alt-fill"></i> Amphitheater, 4th Floor, Albert Einstein Building, BatStateU Alangilan
+              Campus
+            </span>
+          </div>
+
+          <div class="blog-sdg">
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-Wheel.jpg"><img>
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-4.jpg"><img>
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-8.jpg"><img>
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-9.jpg"><img>
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-11.jpg"><img>
+            <img class="sdg-img" src="blogs-assets/SDG/SDG-17.jpg"><img>
+          </div>
+        </div>
+
+        <!-- Popup Modals -->
+        <!-- Popup for Main Image -->
+        <div id="imagePopup1" class="popup-modal">
+          <a href="#" class="popup-background"></a>
+          <div class="popup-content">
+            <img class="popup-image" src="blogs-assets/blog-img/blog-4-1.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Popup for Sub Image 1 -->
+        <div id="imagePopup2" class="popup-modal">
+          <a href="#" class="popup-background"></a>
+          <div class="popup-content">
+            <img class="popup-image" src="blogs-assets/blog-img/blog-4-2.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Popup for Sub Image 2 -->
+        <div id="imagePopup3" class="popup-modal">
+          <a href="#" class="popup-background"></a>
+          <div class="popup-content">
+            <img class="popup-image" src="blogs-assets/blog-img/blog-4-3.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Popup for Sub Image 3 -->
+        <div id="imagePopup4" class="popup-modal">
+          <a href="#" class="popup-background"></a>
+          <div class="popup-content">
+            <img class="popup-image" src="blogs-assets/blog-img/blog-4-4.jpg" alt="">
+          </div>
+        </div>
+
+        <div id="imagePopup5" class="popup-modal">
+          <a href="#" class="popup-background"></a>
+          <div class="popup-content">
+            <img class="popup-image" src="blogs-assets/blog-img/blog-4-5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="blog-p">
+          <p>
+            As Batangas State University celebrated four decades of excellence with "BatStateU Alangilan@40: Engineering
+            the Future for National Development on December 17, 2024," the spotlight was on the Knowledge, Innovation,
+            and Science Technology (KIST) Park.
+          </p>
+          <p>
+            The third segment of the day, titled "KIST Park: Engineering a Dynamic Industry and Academe Convergence,"
+            highlighted KIST Park’s distinction as the first PEZA-registered KIST Park in the Philippines, showcasing
+            BatStateU’s leadership in driving research progress and shaping a new standard for innovation and
+            collaboration.
+          </p>
+          <p>
+            The segment opened with an Audio Visual Presentation on KIST Park’s impact for R&D Collaboration, setting
+            the tone for the discussions that followed. One of the segment's most anticipated features was the MOA
+            Signing with Industry Locators, formalizing partnerships with key industry leaders:
+          </p>
+          <li><b>Pythos Technology Philippines, Inc.</b></li>
+          <li><b>FusionNode, Inc.</b></li>
+          <li><b>FM Dynamics</b></li>
+          <p>
+            The agreement solidified the commitment between BatStateU, PEZA, and the industry locators to collaborate on
+            innovation-driven projects, research, and talent development.
+            <br><br>
+            The Fireside Chat that followed the signing ceremony provided an in-depth exploration of how
+            academe-industry collaboration can address critical challenges. Panelists included key representatives from
+            PEZA, M. Reiner Guste and the industry locators: Engr. Ernest Thomas Nierras of Pythos Technology
+            Philippines, Mr. Jerry Sto. Tomas of FusionNode, and Engr. Troy Alagao of FM Dynamics, alongside the
+            University President, Dr. Tirso Ronquillo.
+          </p>
+        </div>
+
+      </div>
+      <div class="body-extend">
+        <div class="blog-p-extend">
+          <p>
+            The discussion explored several important themes.<b>Mr. Reiner Guste</b> highlighted KIST Park’s distinction
+            as a new special economic zone under PEZA, emphasizing its aim to leverage knowledge as a key driver of
+            innovation, moving beyond traditional industry-focused approaches.
+            <br><br>
+            <b>Dr. Tirso A. Ronquillo</b> emphasized BatStateU’s leadership in shaping the Philippine innovation
+            ecosystem through KIST Park. He highlighted how the park’s unique model aligns academic expertise with
+            industry needs, creating a platform that not only fosters groundbreaking research but also prepares students
+            to become leaders and innovators who can address the nation’s most pressing challenges.
+            <br><br>
+            <b>Mr. Jerry Sto. Tomas</b> underscored the critical need to build a stronger cybersecurity ecosystem in the
+            Philippines. He expressed his goal of bringing his expertise to the country while developing local talent to
+            address the growing importance of cybersecurity in today’s digital landscape.
+            <br><br>
+            <b>Engr. Troy Alagao</b> of FM Dynamics emphasized the value of academic collaboration, outlining his plans
+            to work closely with BatStateU’s engineering students. He highlighted how their fresh perspectives and
+            technical skills could contribute to practical, industry-ready solutions, bridging the gap between
+            theoretical knowledge and real-world application in the field of the oil and gas industry.
+            <br><br>
+            Meanwhile, <b>Engr. Ernest Thomas Nierra</b> s of Pythos Technology reflected on the journey of innovation,
+            emphasizing that failure is an integral part of success. He advocated for an environment that encourages
+            experimentation and resilience, inspiring students and researchers to pursue transformative ideas.
+            <br><br>
+            The panel concluded with reflections on the readiness of the Philippine innovation ecosystem to maximize the
+            potential of partnerships. The discussion was optimistic about the role such collaborations can play in
+            strengthening the country’s competitiveness and technological capabilities, positioning KIST Park as a vital
+            hub for innovation and growth.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="engage" class="why-choose-us-for section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up"
+        style="display: flex; align-items: center; padding-bottom: 0px; flex-wrap: wrap;">
+        <h2
+          style="color: #005099; text-align: left; white-space: normal; margin-right: 20px; font-size: clamp(30px, 5vw, 50px);">
+          Engage with Us!</h2>
+        <div style="flex-grow: 1; height: 3px; background-color: #005099; margin-bottom: 10px; min-width: 50px;"></div>
+      </div>
+
+      <div data-aos="fade-up">
+        <p style="margin-left: max(2rem, min(18rem, 15vw)); color: #ff6f2b; font-size: clamp(14px, 2vw, 16px);">Highly
+          flexible spaces available to accelerate the rapid growth of technology-based companies.</p>
+      </div>
+
+      <div data-aos="fade-up">
+        <div class="container row" style="display: flex; justify-content: center; margin: auto; flex-wrap: wrap;">
+          <div class="col-lg-4 col-md-6 col-sm-12" style="padding: 15px; z-index: 0;">
+            <div>
+              <div id="map" style="height: 300px; width: min(380px, 100%);"></div>
+            </div>
+            <div class="map-text" style="color: #005099; text-align: left; margin-top: 10px;">
+              <p><b>Strategic Location:</b></p>
+              <li>Located Near Batangas Port, second-largest international port in the Philippines</li>
+              <li>Nestled in the Calabarzon Region, 2nd Largest economic region in terms of GDP</li>
+              <li>Top location for Technology Transfer and commercialization in the Philippines</li>
+              <li>Adjacent to other technology parks, business hubs and transport systems</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="container col-lg-8 col-md-6 col-sm-12" style="padding: 15px;">
+            <div>
+              <h3 style="font-size: clamp(28px, 6vw, 40px); text-align: right; color: #005099;">Become one of the
+                pioneering locators at BatStateU KIST Park!</h3>
+            </div>
+            <div>
+              <p style="color: black; text-align: right; font-size: clamp(14px, 2vw, 16px);">Spaces are available for
+                rent, with the option to customize arrangements to meet your specific needs.</p>
+            </div>
+            <div>
+              <h3 class="text-end">
+                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8"
+                  class="btn position-relative overflow-hidden d-inline-block text-white" style="
+                        background-color: #c60001;
+                        font-size: clamp(20px, 4vw, 30px);
+                        transition: all 0.3s ease;
+                        @media (hover: hover) {
+                          &:hover {
+                            transform: translateY(-2px);
+                            background-color: #b30001;
+                            box-shadow: 0 4px 15px rgba(198, 0, 1, 0.2);
+                          }
+                          &::before {
+                            content: '';
+                            position: absolute;
+                            top: -50%;
+                            left: -50%;
+                            width: 200%;
+                            height: 200%;
+                            background: linear-gradient(
+                              45deg,
+                              transparent,
+                              rgba(255,255,255,0.1),
+                              transparent
+                            );
+                            transform: translateX(-100%);
+                            transition: transform 0.6s;
+                          }
+                          &:hover::before {
+                            transform: translateX(100%);
+                          }
+                        }">
+                  Inquire Here
+                </a>
+              </h3>
+
+            </div>
+          </div>
+          <!-- Let's Stay Connnected Section -->
+          <div
+            style="display: flex; flex-direction: row; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: space-between; max-width: 100%; margin: 0 auto;">
+            <!-- Left side content -->
+            <div class="col-lg-4 col-md-6 col-sm-12" style=" z-index: 0;">
+              <div>
+                <h3 style="color:#ff6f2b; font-size: clamp(16px, 3vw, 20px); margin: 0 0 10px 0;">Let's Stay Connected
+                </h3>
+              </div>
+              <p style="color: black; font-size: clamp(11px, 1.8vw, 12px); margin: 0;">Subscribe to our newsletter for
+                the latest updates and exciting opportunities you won't want to miss!</p>
+            </div>
+
+            <!-- Right side form -->
+            <!-- Replace or modify the existing subscribe button code -->
+            <div style="display: flex; flex-direction: row; gap: 10px; text-align: right;">
+              <input type="text" placeholder="Enter Your Email here" style="color: black; 
+                border: 1px solid #ccc; 
+                background-color: #d9d9d9; 
+                width: 100%; 
+                max-width: 300px; 
+                padding: 8px 12px; 
+                border-radius: 4px;">
+              <button onclick="handleSubscribe()" style="color: white; 
+                border: none; 
+                background-color: #ff6f2b; 
+                padding: 8px 15px; 
+                border-radius: 4px; 
+                cursor: pointer; 
+                width: fit-content;
+                transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#ff8851'"
+                onmouseout="this.style.backgroundColor='#ff6f2b'">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- /Why Choose Us Section -->
+
+
+
+
+
+  </main>
+  <footer id="footer" class="footer" style="background-color: #005099;">
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/press_release_js.js"></script>
+  <script src="../assets/js/jc_script.js"></script>
+<script src="assets/js/addsubscribers.js"></script>
+</body>
+
+</html>

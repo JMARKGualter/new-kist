@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Article Details - KIST Park</title>
+  <!-- Add your other head content here -->
+</head>
+
+<body>
+  <div id="article-details" class="container mt-5">
+    <!-- Article content will be displayed here -->
+  </div>
+
+  <!-- JavaScript to Fetch and Display Article Details -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the 'id' from the URL query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('id');
+  
+      // Fetch article details using the 'id'
+      fetch(`http://122.53.28.51:8085/articles/${articleId}`)
+        .then(response => response.json())
+        .then(article => {
+          const articleDetails = document.getElementById("article-details");
+  
+          // Populate the article content with images and paragraphs
+          articleDetails.innerHTML = `
+            <div class="card">
+              <h1 class="card-title">${article.title || "Untitled Article"}</h1>
+              <img src="http://122.53.28.51${article.thumbnail || "/default-thumbnail.jpg"}" class="card-img-top" alt="${article.title || "Article Image"}">
+              <div class="card-body">
+                <p class="card-text">${article.paragraph1 || "No content available."}</p>
+                ${article.image1 ? `<img src="http://122.53.28.51${article.image1}" class="img-fluid mb-3" alt="Image 1">` : ""}
+                
+                ${article.paragraph2 ? `<p class="card-text">${article.paragraph2}</p>` : ""}
+                ${article.image2 ? `<img src="http://122.53.28.51${article.image2}" class="img-fluid mb-3" alt="Image 2">` : ""}
+                
+                ${article.paragraph3 ? `<p class="card-text">${article.paragraph3}</p>` : ""}
+                ${article.image3 ? `<img src="http://122.53.28.51${article.image3}" class="img-fluid mb-3" alt="Image 3">` : ""}
+                
+                <!-- Add additional paragraphs and images as needed -->
+              </div>
+            </div>
+          `;
+        })
+        .catch(error => {
+          console.error("Error fetching article details:", error);
+          document.getElementById("article-details").innerHTML = `<p>Unable to load article details. Please try again later.</p>`;
+        });
+    });
+  </script>
+  
+  
+</body>
+
+</html>

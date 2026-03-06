@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BatStateU KIST Park</title>
+
+  <meta name="description"
+    content="The Knowledge, Innovation and Science Technology (KIST) Park at Batangas State University is the Philippines' premier hub for technological innovation and commercialization. Located in CALABARZON Region, this PEZA-registered technology park connects businesses with university R&D resources including the STEER Hub, LIKHA FabLab, and specialized research centers. KIST Park facilitates technology transfer, nurtures high-tech startups, and supports the national transition to a knowledge-intensive economy through industry-academia collaboration.">
+  <meta name="google-site-verification" content="hr80J5TIcVWu8TSRfej-bAjkGOHFeSaPbxd1xMnuntw" />
+  <meta name="keywords"
+    content="KIST Park, Knowledge Innovation Science Technology, Batangas State University, technology park, innovation hub, CALABARZON, technology transfer, commercialization, Philippines, R&D, STEER Hub, technopreneurship, LIKHA FabLab, PEZA-registered, high-tech firms, knowledge economy, industrial research, university collaboration, spin-offs, innovation ecosystem, Alternative Energy Research, ICT Research, Material Science, Manufacturing Research">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES0PWB5CY5"></script>
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+
+<body class="index-page">
+
+  <!-- Dynamic Background Container -->
+  <div id="dynamic-background"></div>
+
+  <!-- Modal -->
+  <!-- <div id="modalForm" class="modal first-modal">
+        <div class="modal-content">
+          <div class="close-button" id="closeModal">&times;</div>
+          <div class="modal-header">Thank you for visiting our booth!</div>
+          <div class="modal-body">
+            <p>Before proceeding, we would love to engage with you. We appreciate your time in filling up this form.</p>
+          </div>
+          <form id="userForm">
+            <div class="form-group">
+              <label for="affiliation">Affiliation:</label>
+              <input type="text" id="affiliation" name="affiliation" required>
+            </div>
+            <div class="form-group"> 
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="contactNumber">Contact Number:</label>
+              <input type="tel" id="contactNumber" name="contactNumber">
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <textarea id="address" name="address" ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="interests">Interests:</label>
+              <textarea type="text" id="interests" name="interests" ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div> -->
+
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+
+          <img src="assets/img/logo.jpg" alt="KIST PARK">
+          <!-- <h1 class="sitename" style="color: darkred">KIST Park</h1> -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <!-- Mobile Sidebar Header -->
+            <li class="d-xl-none sidebar-header">
+              <div class="d-flex align-items-center p-3">
+                <img src="assets/img/favicon.png" alt="Logo" style="width: 35px; height: auto; margin-right: 10px;">
+                <span style="font-weight: 800; color: #005099; font-size: 1.2rem; font-family: 'Poppins', sans-serif;">KIST Park</span>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="index.html" class="nav-link active">
+                <span>The Technopark</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#ventures-hub">Ventures Hub</a></li>
+                <li><a class="dropdown-item" href="#design-innovation">Design Innovation Building</a></li>
+                <li><a class="dropdown-item" href="#technology-hub">Techno Hub</a></li>
+                <li><a class="dropdown-item smart-manufacturing-mobile" href="#smart-manufacturing">Smart Manufacturing</a></li>
+                <li><a class="dropdown-item" href="#innovation-hub">Innovation Hub</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="the-ecosystem.html" class="nav-link">
+                <span>The Ecosystem</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="the-ecosystem.html#reasearch-center">Research Centers</a></li>
+                <li><a class="dropdown-item" href="the-ecosystem.html#innovation-center">Innovation Centers</a></li>
+                <li><a class="dropdown-item peza-incentives-mobile" href="the-ecosystem.html#peza-benefits">PEZA Incentives</a></li>
+                <li><a class="dropdown-item" href="the-ecosystem.html#partners">Partners</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="the-impact.html" class="nav-link">
+                <span>The Impact</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item press-release-mobile" href="press-releases.html">Press Releases</a></li>
+                <li><a class="dropdown-item" href="highlights.html">Highlights</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>
+                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8"
+                  class="btn position-relative overflow-hidden text-white inquire-btn" style="
+                  background-color: #c60001;
+                  font-size: clamp(18px, 30px);
+                  transition: all 0.3s ease;
+                  padding: 8px;
+                  border-radius: 10px;
+                  display: flex; align-items: center; justify-content: center;
+                  ">
+                  Inquire Here
+                </a>
+              </h4>
+            </li>
+            <!-- Location Icon for Desktop -->
+            <li class="d-none d-xl-block">
+              <a href="https://firstkistpark.com/explore" class="location-icon" target="_blank" style="margin-left: -15px; display: flex; align-items: center; text-decoration: none;" title="Explore KIST Park">
+                <img src="assets/img/favicon/loc.webp" alt="Location" style="width: 60px; height: auto;">
+              </a>
+            </li>
+          </ul>
+          <!-- Location Icon for Mobile -->
+          <a href="https://firstkistpark.com/explore" class="location-icon-mobile d-xl-none" target="_blank" title="Explore KIST Park">
+            <img src="assets/img/favicon/loc.webp" alt="Location">
+          </a>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main class="main">
+
+     <!-- Hero Section -->
+    <section id="hero" class="hero section text-center">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <div class="hero-logo-center">
+          <img src="assets/img/favicon.png" alt="KIST Park Logo">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/kist-4.webp" alt="">
+          <div class="hero-text-container">
+            <h2 class="typing-effect" style="--typing-width: 24.1ch; animation-timing-function: steps(29, end), step-end;">Start Here, Scale Everywhere.</h2>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/kist-2.webp" alt="">
+          <div class="hero-text-container">
+            <h2 class="typing-effect" style="--typing-width: 35.1ch; animation-timing-function: steps(38, end), step-end;">Transforming Knowledge into Technology</h2>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/kist-3.webp" alt="">
+          <div class="hero-text-container">
+            <h2 class="typing-effect" style="--typing-width: 46.1ch; animation-timing-function: steps(51, end), step-end;">Harness the Power of Industry-Academe <br class="d-sm-none">Collaboration</h2>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/kist-1.webp" alt="">
+          <div class="hero-text-container">
+            <h2 class="typing-effect" style="--typing-width: 29.1ch; animation-timing-function: steps(34, end), step-end;">Co-create the Future of Innovation</h2>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <!-- Static Content Overlay -->
+        <div class="hero-static-content">
+          <p>Unlock Inclusive Business Perks</p>
+          <a href="#engage" class="btn-inquire-hero">
+            Inquire Here <i class="bi bi-arrow-down-circle"></i>
+          </a>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true" style="background: none;"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true" style="background: none;"></span>
+        </a>
+
+      </div>
+
+
+    </section><!-- /Hero Section -->
+
+
+    <!-- Virtual Tour Section -->
+    <section style="position: relative; padding: 20px; background-color: #f9f9f9; text-align: center;">
+      <div class="virtual-tour-wrapper">
+      <!-- Video Container with Overlay Text -->
+      <div data-aos="fade-up"
+        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 10px;">
+
+        <!-- Video -->
+        <iframe id="virtualTourVideo" src="https://www.youtube.com/embed/lrVgFdzAIJE?si=pqqPxsOGFIWYZxR8E&enablejsapi=1&rel=0&loop=1&playlist=lrVgFdzAIJE" title="KIST Park Virtual Tour"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 10px;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+        </iframe>
+
+        <!-- Overlay Text -->
+        <div class="yt-overlay-container" style=" color: white; text-align: left;">
+          <h2 class="yt-overlay-text-h2">EXPERIENCE
+            KIST PARK ON A VIRTUAL TOUR</h2>
+          <p class="yt-overlay-text-p">
+            Join a virtual tour and explore the innovative spaces that power industry-academic collaboration.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+
+    <!-- <div class="diagonal-divider"></div> -->
+
+    <!-- Discover Section -->
+
+    <!-- Discover Section -->
+
+    <section id="discover" class="discover section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" style="position: relative; top: 0; padding-bottom: 10px;">
+        <h2 style="text-align: center; color: darkred; font-weight: bold; font-size: 25px;">
+          Experience the Philippines’ first PEZA-Registered KIST Park
+        </h2>
+        <hr style="background-color: #005099; height: 3px; margin-bottom: 0;">
+        <p style="padding-top: 0; color: #005099;">Batangas State University KIST Park is a special economic zone
+          located in Batangas City, offering space for technology-based</p>
+        <p style="padding-bottom: 13px; color: #005099;">industry locators and providing access to top-tier talent and
+          tailored innovation resources.</p>
+
+
+        <!-- Card Wrapper (Applied Only on Mobile) -->
+        <div class="discover-card">
+          <!-- Image -->
+          <img src="assets/img/discover/1.png" alt="KIST Park" style="width: 100%;">
+
+          <!-- Overlay div (Now inside the card) -->
+          <div class="discover-container">
+            <div class="mobile-view">
+              <p>With strategic location in CALABARZON region,
+                access to over 61,000 students, globally competitive researchers, and exclusive PEZA incentives,
+                BatStateU KIST Park is the smart choice for Industry Locators.</p>
+            </div>
+            <div class="website-view">
+              <p>With strategic location in CALABARZON region,</p>
+              <p>access to over 61,000 students, globally competitive researchers, and exclusive PEZA incentives,</p>
+              <p>BatStateU KIST Park is the smart choice for Industry Locators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    </div>
+    <!-- End Section Title -->
+    </section>
+
+    <!-- /Discover Section -->
+
+    <!-- Industries We Serve Section -->
+    <section id="industries-serve" class="industries-serve section">
+
+
+      <!-- <div class="container">
+        <div class="row gy-4 align-text-center">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <p style="text-align: center">With a clear vision and strong partnerships, Batangas State University’s Knowledge, Innovation, and Science Technology (KIST) Park is at the forefront of building the Philippines' knowledge-based economy, offering industry locators valuable resources and collaboration opportunities.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up"
+        style="display: flex; align-items: center; padding-bottom: 0px;">
+        <h2 style="color: #c60001; text-align: left; white-space: nowrap; margin-right: 20px;">Key Innovation Areas</h2>
+        <div style="flex-grow: 1; height: 3px; background-color: #005099; margin-bottom: 10px;"></div>
+      </div>
+
+      <div class="container section-title" data-aos="fade-up">
+        <p style="padding-top: 0px; color: #005099;">
+          With a clear vision and strong partnerships, Batangas State University’s Knowledge, Innovation, and Science
+          Technology (KIST) Park is at the forefront of building the Philippines' knowledge-based economy, driving
+          innovation across key innovation areas.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="industries-serve-container" style="display: flex; justify-content: center;"
+        data-aos="fade-up">
+        <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+          <div class="row d-flex justify-content-center container wrapper"> <!-- Add a row to wrap the cards -->
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-cpu"></i>
+                  <span>SEMI-CONDUCTOR AND ELECTRONICS</span></div>
+                <div class="industries-list-container">
+                  <P>Focus on electronic components and devices.</P>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-gear-wide-connected"></i>
+                  <span>ADVANCED MANUFACTURING</span></div>
+                <div class="industries-list-container">
+                  <P>Use of new technologies to improve manufacturing.</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-virus"></i>
+                  <span>BIOTECHNOLOGY</span></div>
+                <div class="industries-list-container">
+                  <P>Application of biological knowledge for product development.</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-palette"></i>
+                  <span>CREATIVE INDUSTRIES</span></div>
+                <div class="industries-list-container">
+                  <P>Creation and distribution of creative content</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-shield-lock"></i>
+                  <span>CYBERSECURITY</span></div>
+                <div class="industries-list-container">
+                  <P>Measures to protect data and systems.</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-robot"></i>
+                  <span>AI AND DATA SCIENCE</span></div>
+                <div class="industries-list-container">
+                  <p>Use of data and technology for insights and automation.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-book"></i>
+                  <span>EDU TECH</span></div>
+                <div class="industries-list-container">
+                  <p>Technology integration in educational settings.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-cash-coin"></i>
+                  <span>FIN TECH</span></div>
+                <div class="industries-list-container">
+                  <p>Technology-driven solutions in finance.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-flower1"></i>
+                  <span>AGRI TECH</span></div>
+                <div class="industries-list-container">
+                  <p>Technology applications in agriculture.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-recycle"></i>
+                  <span>CLEAN TECH</span></div>
+                <div class="industries-list-container">
+                  <p>Development of sustainable and eco-friendly technologies.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-heart-pulse"></i>
+                  <span>HEALTH TECH</span></div>
+                <div class="industries-list-container">
+                  <P>Technologies aimed at enhancing healthcare.</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-3">
+
+              <div class="industries-card">
+                <div class="industries-title-container">
+                  <i class="bi bi-buildings"></i>
+                  <span>SMART CITIES</span></div>
+                <div class="industries-list-container">
+                  <P>Urban areas that use technology and data to enhance infrastructure, public services, and overall
+                    quality of life.</P>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- <div class="col-sm-12 col-md-6 col-lg-3 mb-3"> 
+      
+                  <img class="card-img d-none" src="assets/img/card/cybersecurity.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                  <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+                          <small class="card-meta mb-2"> </small>
+                          <h4 class="card-title mt-0 "><a class="text-light" href="">Information and Communication Technology</a></h4>
+                          <small><i class="far fa-clock"></i> Advancing secure, intelligent systems in Cybersecurity, AI, Data Science, and Quantum Computing, driving digital transformation, data-driven decision-making, and next-generation technologies for industry solutions.</small>
+                      </div>
+                      <div class="card-footer">
+                          <div class="media">
+                              <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                              <div class="media-body">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+    
+  
+            
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3"> 
+                  <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/cybersecurity.jpg'); background-size: cover;">
+                      <img class="card-img d-none" src="assets/img/card/cybersecurity.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                          <div class="card-body">
+                              <small class="card-meta mb-2"> </small>
+                              <h4 class="card-title mt-0 "><a class="text-light" href="">Information and Communication Technology</a></h4>
+                              <small><i class="far fa-clock"></i> Advancing secure, intelligent systems in Cybersecurity, AI, Data Science, and Quantum Computing, driving digital transformation, data-driven decision-making, and next-generation technologies for industry solutions.</small>
+                          </div>
+                          <div class="card-footer">
+                              <div class="media">
+                                  <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                  <div class="media-body">
+                            
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/microelectronics.jpg'); background-size: cover;">
+                      <img class="card-img d-none" src="assets/img/card/microelectronics.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                      <div class="card-img-overlay d-flex flex-column">
+                          <div class="card-body">
+                              <small class="card-meta mb-2"> </small>
+                              <h4 class="card-title mt-0 "><a class="text-light" href="">Microelectronics</a></h4>
+                              <small><i class="far fa-clock"></i>Driving innovation in semiconductor technologies, sensors, and integrated circuits for smarter devices.</small>
+                          </div>
+                          <div class="card-footer">
+                              <div class="media">
+                                  <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                  <div class="media-body">
+                                
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3"> 
+                <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/biotechnology.jpg'); background-size: cover;">
+                    <img class="card-img d-none" src="assets/img/card/biotechnology.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <small class="card-meta mb-2"> </small>
+                            <h4 class="card-title mt-0 "><a class="text-light" href="">Biotechnology</a></h4>
+                            <small><i class="far fa-clock"></i>Fostering breakthroughs in healthcare, agriculture, and environmental solutions through bio-based research.</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                <div class="media-body">
+                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/emerging.jpg'); background-size: cover;">
+                    <img class="card-img d-none" src="assets/img/card/emerging.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <small class="card-meta mb-2"> </small>
+                            <h4 class="card-title mt-0 "><a class="text-light" href="">Emerging Engineering</a></h4>
+                            <small><i class="far fa-clock"></i>Developing next-generation engineering solutions in robotics, nanotechnology, and advanced materials.</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                <div class="media-body">
+                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3"> 
+                <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/manufacturing.jpg'); background-size: cover;">
+                    <img class="card-img d-none" src="assets/img/card/manufacturing.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <small class="card-meta mb-2"> </small>
+                            <h4 class="card-title mt-0 "><a class="text-light" href="">Advanced Manufacturing</a></h4>
+                            <small><i class="far fa-clock"></i>Innovating precision, automation, and smart manufacturing processes for small-volume, high-value production to enhance productivity.</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                <div class="media-body">
+                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3"> 
+                <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/creative.jpg'); background-size: cover;">
+                    <img class="card-img d-none" src="assets/img/card/creative.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <small class="card-meta mb-2"> </small>
+                            <h4 class="card-title mt-0 "><a class="text-light" href="">Creative Industries</a></h4>
+                            <small><i class="far fa-clock"></i>Empowering digital media, design, and cultural production to fuel creative economies.</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                <div class="media-body">
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                <div class="card text-light card-has-bg click-col" style="background-image:url('assets/img/card/renewable.jpg'); background-size: cover;">
+                    <img class="card-img d-none" src="assets/img/card/renewable.jpg" alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <div class="card-body">
+                            <small class="card-meta mb-2"> </small>
+                            <h4 class="card-title mt-0 "><a class="text-light" href="">Renewable Energy</a></h4>
+                            <small><i class="far fa-clock"></i>Leading advancements in clean, sustainable energy technologies such as solar, wind, and bioenergy.</small>
+                        </div>
+                        <div class="card-footer">
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="assets/img/kist-logo.svg" alt="Generic placeholder image" style="max-width:50px">
+                                <div class="media-body">
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div> -->
+
+
+          </div> <!-- End of row -->
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const cards = document.querySelectorAll(".industries-card");
+
+          cards.forEach((card, index) => {
+            card.style.setProperty('--card-index', index);
+
+            card.addEventListener("click", function () {
+              cards.forEach(c => {
+                if (c !== this) c.classList.remove("active");
+              });
+              this.classList.toggle("active");
+            });
+          });
+        });
+      </script>
+
+    </section>
+
+    <!-- /Industries We Serve Section -->
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us-for section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <div class="why-choose-banner">
+          <div class="banner-text">
+            DISCOVER THE ADVANTAGE
+            <span class="highlight">WHY CHOOSE BATSTATEU KIST PARK?</span>
+          </div>
+        </div>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="cards-container" id="cards-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-choose-us-btns">
+          <button class="nav-btn" id="prev-btn-overlay" onclick="prevPage()"><i class="bi bi-chevron-left"></i></button>
+          <button class="nav-btn" id="next-btn-overlay" onclick="nextPage()"><i class="bi bi-chevron-right"></i></button>
+        </div>
+        <div class="row gy-4" style="display: flex; align-items: stretch; justify-content: center; margin: 10px;">
+          <!-- All your cards remain the same - we'll control visibility with JS -->
+
+          <!-- Card 1 -->
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/the-ecosystem/peza.png?format=webp" alt="PEZA Incentives">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>PEZA Incentives</h2>
+                <p>Enjoy up to 17 years
+                  of VAT and duty exemptions, tax holidays, and MORE fiscal and non-fiscal benefits.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/2.png?format=webp" alt="Academe-Industry Collaboration Model">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Academe-Industry Collaboration Model</h2>
+                <p>Collaborate with
+                  BatStateU’s vibrant ecosystem—leveraging 61,000 students, 2,600+ faculty, 200+ programs, 15 research
+                  centers and a legacy of academic excellence.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/3.png?format=webp" alt="Competitive Pricing">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Competitive Pricing</h2>
+                <p>Rent premium locator
+                  spaces at BatStateU KIST Park, giving business access to world-class facilities and a thriving
+                  innovation ecosystem—without breaking the bank.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/4.png?format=webp" alt="R&D Facilities">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>R&D Facilities</h2>
+                <p>Benefit from
+                  high-tech research labs, modern co-working spaces, and eco-friendly facilities equipped with the
+                  latest technology to fuel innovation and efficiency.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/9.png?format=webp" alt="Co-Development Research Ventures">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Co-Development Research Ventures</h2>
+                <p>Accelerate
+                  prototyping and product development, gaining access to advanced facilities and expert support to
+                  refine, test, and bring innovations to market.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/5.png?format=webp" alt="Innovation-Driven Ecosystem">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Innovation-Driven Ecosystem</h2>
+                <p>Be part of an
+                  ecosystem of people who seek to invent the future and visionary ideas come to life.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/6.png?format=webp" alt="Government and Institutional Support">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Government and Institutional Support</h2>
+                <p>Get exclusive
+                  benefits from strong government and institutional support, with access to incentives, resources, and
+                  strategic partnerships.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/7.png?format=webp" alt="Strategic Location">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Strategic Location</h2>
+                <p>Position your
+                  business in CALABARZON, the fastest-growing region in the Philippines, with strategic access to
+                  Batangas City’s second-largest international seaport and a thriving center of economic activity.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/8.png?format=webp" alt="Tailored Business Support Services">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Incubation Support</h2>
+                <p>Empower your businesses
+                  throughout the early-stage startup journey by validating the problem-solution fit product-market 
+                  fit through structured validation activities, alongside support for product development, market access funding opportunities, and regualtory compliance.
+
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <div class="why-choose-card">
+              <div class="why-choose-card-img">
+                <img src="assets/img/why-choose/10.png?format=webp" alt="Technology Transfer Opportunities">
+              </div>
+              <div class="why-choose-card-body">
+                <h2>Technology Transfer Opportunities</h2>
+                <p>Access BatStateU’s
+                  expertise to license IP, collaborate on R&D, and fast-track innovations to market with expert support.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-controls" id="pagination-controls" style="text-align: center; margin-top: 20px;">
+        <button id="prev-btn-bottom" onclick="prevPage()" class="button-modern">Previous</button>
+        <span id="page-indicator" style="color: #005099;">Page 1 of 3</span>
+        <button id="next-btn-bottom" onclick="nextPage()" class="button-modern">Next</button>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- /Why Choose Us Section -->
+
+
+
+    <!-- Discover Section -->
+    <!-- <section id="discover" class="discover section">
+   
+      <div class="container section-title glassify-background" data-aos="fade-up">
+        <h2>Discover the First KIST Park</h2>
+       
+      </div>
+    
+
+      <div class="container">
+
+        <div class="row gy-4 align-text-center glassify-background">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+           
+            <p style="text-align: center">BatStateU KIST Park, the Philippines' first PEZA-registered KIST Park, is a 2.7-hectare facility in Batangas City that provides access to top talent through a unique academe-industry collaboration model.</p>
+            <p style="text-align: center">With strategic location in the thriving CALABARZON region,
+              access to over 46,000 students and world-class researchers, and exclusive PEZA incentives,
+              BatStateU KIST Park is the smart choice for Industry Locators.
+              </p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section> -->
+    <!-- /Discover Section -->
+
+
+
+
+
+    <!-- COLLABORATION OPPORTUNITIES SECTION -->
+    <section id="collaboration-opportunities" class="collaboration-section section" style="background-color: #f9f9f9; padding: 40px 0;">
+      <div class="container" data-aos="fade-up">
+        
+        <!-- Section Header -->
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <h2 style="color: #005099; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: clamp(24px, 4vw, 36px); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">
+              Collaboration Opportunities
+            </h2>
+            <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #c60001, #ff6f2b); margin: 0 auto 15px; border-radius: 2px;"></div>
+            <p style="color: #444; font-family: 'Roboto', sans-serif; font-size: 16px; max-width: 700px; margin: 0 auto; font-weight: 500;">
+              Find out how to collaborate with KIST Park's Three Pillars.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="collaboration-tabs knowledge-mode">
+          <ul class="nav nav-tabs nav-justified" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-knowledge-tab" data-bs-toggle="tab" data-bs-target="#pills-knowledge" type="button" role="tab" aria-controls="pills-knowledge" aria-selected="true"><i class="bi bi-book-half"></i> KNOWLEDGE</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-innovation-tab" data-bs-toggle="tab" data-bs-target="#pills-innovation" type="button" role="tab" aria-controls="pills-innovation" aria-selected="false"><i class="bi bi-lightbulb"></i> INNOVATION</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-science-tab" data-bs-toggle="tab" data-bs-target="#pills-science" type="button" role="tab" aria-controls="pills-science" aria-selected="false"><i class="bi bi-cpu"></i> SCIENCE TECHNOLOGY</button>
+            </li>
+          </ul>
+
+          <!-- Tabs Content -->
+          <div class="tab-content" id="pills-tabContent">
+            
+            <!-- Knowledge Tab -->
+            <div class="tab-pane fade show active" id="pills-knowledge" role="tabpanel" aria-labelledby="pills-knowledge-tab">
+              <div class="text-center mb-5">
+                <p style="color: #005099; font-size: 18px; max-width: 900px; margin: 0 auto; line-height: 1.6;">
+                  Generate and share information, skills, and expertise, producing valuable insights for both academic and practical applications—aimed at educating, informing, and advancing collective understanding.
+                </p>
+              </div>
+              <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-5">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #005099;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">KNOWLEDGE GENERATION</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Joint Publication Projects</li>
+                        <li>Curriculum Development</li>
+                        <li>Student Thesis Partnerships</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #005099;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">KNOWLEDGE DISSEMINATION</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Networking Events</li>
+                        <li>Mentorship Activities</li>
+                        <li>Consultation Services</li>
+                        <li>Micro-Credential Programs</li>
+                        <li>Internship Training Programs</li>
+                        <li>Hands-On Skill Training Programs</li>
+                        <li>Cooperative Learning Program</li>
+                        <li>Scholarship Programs</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Innovation Tab -->
+            <div class="tab-pane fade" id="pills-innovation" role="tabpanel" aria-labelledby="pills-innovation-tab">
+              <div class="text-center mb-5">
+                <p style="color: #005099; font-size: 18px; max-width: 900px; margin: 0 auto; line-height: 1.6;">
+                  Transform new ideas into practical, marketable solutions—addressing market needs and solving challenges through innovation, with a focus on commercializing and scaling concepts for market success.
+                </p>
+              </div>
+              <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #c60001;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">FUNDING SUPPORT</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Co-Funded Research Projects</li>
+                        <li>Innovation Grants or Funding Competitions</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #c60001;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">CO-DEVELOPMENT</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Hackathons</li>
+                        <li>Reverse Pitching</li>
+                        <li>Prototyping</li>
+                        <li>Product Development Workshops</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #c60001;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">COMMERCIALIZATION</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Technology Transfer Agreements</li>
+                        <li>Startup Incubation</li>
+                        <li>Startup Acceleration</li>
+                        <li>Investor Pitch Events</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Science Technology Tab -->
+            <div class="tab-pane fade" id="pills-science" role="tabpanel" aria-labelledby="pills-science-tab">
+              <div class="text-center mb-5">
+                <p style="color: #005099; font-size: 18px; max-width: 900px; margin: 0 auto; line-height: 1.6;">
+                  Apply systematic study and research to develop innovative tools, systems, and processes—driven by the exploration of natural phenomena and the advancement of new technologies.
+                </p>
+              </div>
+              <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #ff6f2b;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">TECHNOLOGICAL ADVANCEMENT</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Launch of New Tech Initiatives</li>
+                        <li>Collaboration on Emerging Technologies</li>
+                        <li>Joint development of advanced materials and systems</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #ff6f2b;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">RESEARCH FACILITIES</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Establishment of specialized Research Laboratories and Centers</li>
+                        <li>Facility Tours and Benchmarking</li>
+                        <li>Lab sharing agreements for collaborative research</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="collaboration-card">
+                    <div class="collaboration-card-header" style="background-color: #ff6f2b;">
+                      <h3 style="color: white; font-size: 18px; margin: 0; text-transform: uppercase;">COMMUNITY OUTREACH</h3>
+                    </div>
+                    <div class="collaboration-card-body">
+                      <ul>
+                        <li>Community Outreach Programs using Applied Science and Technology</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Proclamation Section -->
+    <!-- <section style="position: relative; padding: 20px; background-color: #f9f9f9; text-align: center;" >
+
+      <a href="https://lawphil.net/executive/proc/proc2020/pdf/proc_947_2020.pdf" target="_blank" data-aos="fade-up">
+        <img src="assets/img/proclamation/1.png" alt="Proclamation 947 PDF"
+          style="object-fit: cover; width: 100%; height: 100%;">
+      </a>
+    </section> -->
+
+    <!-- Proclamation Section -->
+
+
+
+
+    <!-- Buildings Section -->
+    <section id="ventures-hub" class="building-section" style="position: relative; padding: 20px; text-align: center;">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-md-8 " style="padding: 10px;">
+            <div id="venturesHubCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="assets/img/the-ecosystem/ventureshub1.jpg" class="glightbox" data-gallery="ventures-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshub1.jpg" class="d-block w-100" alt="Ventures Hub 1" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/ventureshu2.jpg" class="glightbox" data-gallery="ventures-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshu2.jpg" class="d-block w-100" alt="Ventures Hub 2" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/ventureshub3.jpg" class="glightbox" data-gallery="ventures-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshub3.jpg" class="d-block w-100" alt="Ventures Hub 3" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/ventureshub4.jpg" class="glightbox" data-gallery="ventures-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshub4.jpg" class="d-block w-100" alt="Ventures Hub 4" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/ventureshub5.jpg" class="glightbox" data-gallery="ventures-hub-gallery"style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshub5.jpg" class="d-block w-100" alt="Ventures Hub 5" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/ventureshub6.jpg" class="glightbox" data-gallery="ventures-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/ventureshub6.jpg" class="d-block w-100" alt="Ventures Hub 6" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#venturesHubCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#venturesHubCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 order-1" style="padding: 30px;">
+            <strong style="color: #C60001; font-size: 20px; font-style: bold;">VENTURES HUB</strong>
+            <p style="color: #005099; text-align: justify; padding-top: 20px; font-size: 14px; font-family: 'Poppins', sans-serif;">
+              Starting at 18 sqm floor space, BatStateU KIST
+              Park provides high-speed internet, 100%
+              backup power, security, firefighting equipment
+              and reliable water and wastewater systems,
+              ensuring a conducive business environment.
+              <br> <br>
+              Ventures Hub features modular locator spaces designed to help startups grow and scale. This is an interim
+              facility constructed from container vans with a cutting-edge industrial design that can be easily built
+              and tailored while full-scale development is underway.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!-- Check out Available spaces  -->
+    <section class="checkout-section">
+      <div class="container section-title" data-aos="fade-up">
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 15px;">
+          <h2
+            style="color: #005099; text-align: left; margin: 0; flex-shrink: 0; flex-basis: auto; font-size: clamp(1rem, 4vw, 1.5rem);">
+            CHECKOUT THE AVAILABLE SPACES AT VENTURES HUB</h2>
+          <div style="flex-grow: 1; height: 3px; background-color: #005099; min-width: 50px;"></div>
+        </div>
+      </div>
+      <div class="spaces" data-aos="fade-up">
+        <img class="spaces-img" src="assets\img\checkout-section\Traxion Hub-2(2)_enhanced.webp" alt="">
+      </div>
+
+      <div class="reserve-here" data-aos="fade-up">
+        <div class="reserve-button">
+          <h2><a href="https://forms.gle/zsDi3maAxYN9zjR67">Reserve Here</a></h2>
+        </div>
+        <div class="units">
+          <!-- <h5>Units Reserved: Unit 101-102, Unit 105-106, Unit 109-110, Unit 117-118</h5> -->
+        </div>
+      </div>
+      <div class="rocket-container" data-aos="fade-up">
+        <div class="rocket">
+          <dotlottie-player src="https://lottie.host/543eca98-6792-46da-8734-2caa1a915aa0/F1TyU5JYow.lottie"
+            background="transparent" speed="1" loop autoplay></dotlottie-player>
+          <div class="semi-circle"></div>
+        </div>
+      </div>
+      <div class="insparation-container" data-aos="fade-up">
+        <div class="insp-title">
+          <h2>The Inspiration Behind the Ventures Hub</h2>
+        </div>
+        <div class="insp-content">
+          <p>Ventures Hub was inspired by a clear mission: <b>to create a space that moves at the speed of
+              innovation.</b></p>
+          <p>
+            We saw an opportunity to bridge the gap between vision and infrastructure—to provide startups with a
+            workspace that wasn’t just functional but adaptive, scalable, and future-ready.
+            <br>
+            As large-scale developments progress, we embraced a modular approach, allowing entrepreneurs to start,
+            build, and grow their ventures without delay. We drew inspiration from
+            <br> global startup hubs where agility and flexibility define success.
+            <br>
+            This hub was designed to be an interim yet high-impact solution—a venture launchpad where startups can set
+            up quickly, customize their spaces, and expand as they scale.
+          </p>
+          <p>
+            <b>
+              At BatStateU KIST Park, locators aren’t just tenants; they are part of an evolving ecosystem where
+              ventures don’t just start—they thrive.
+            </b>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="design-innovation" class="building-section" style="position: relative; padding: 20px; text-align: center;">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8 order-md-2 order-1" style="padding: 30px;">
+            <div id="designInnovationCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="assets/img/the-ecosystem/design-innovation.webp" class="glightbox" data-gallery="design-innovation-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/design-innovation.webp" class="d-block w-100" alt="Design Innovation Building" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/design-innovation2.jpg" class="glightbox" data-gallery="design-innovation-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/design-innovation2.jpg" class="d-block w-100" alt="Design Innovation Building" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/DESIGNINNOVATIONBUILDING1.png" class="glightbox" data-gallery="design-innovation-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/DESIGNINNOVATIONBUILDING1.png" class="d-block w-100" alt="Design Innovation Building" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/DESIGNINNOVATIONBUILDING2.png" class="glightbox" data-gallery="design-innovation-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/DESIGNINNOVATIONBUILDING2.png" class="d-block w-100" alt="Design Innovation Building" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#designInnovationCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#designInnovationCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 order-md-1 order-2" style="padding-left: 70px; padding-right: 70px; padding-top: 33px;">
+            <strong style="color: #C60001; font-size: 20px; font-style: bold;">DESIGN INNOVATION BUILDING</strong>
+            <p style="color: #005099; text-align: justify; padding-top: 20px; font-size: 14px; font-family: 'Poppins', sans-serif;">
+              This is a six-storey interdisciplinary hub that focuses on learning, design thinking, and the convergence
+              of design and technology. It aims to bring together technical depth, design methodology, and a focus on
+              societal impact.
+              <br> <br>
+              The locators may include companies focused on developing innovative software, apps, and digital solutions.
+              These can range from artificial intelligence (AI) and machine learning (ML) applications to virtual
+              reality (VR) and augmented reality (AR) experiences; ventures working on the development of new hardware
+              products, including wearable technology, consumer electronics, and IoT (Internet of Things) devices; firms
+              specializing in industrial design, product design, UX/UI design, and graphic design that can benefit from
+              collaboration with tech innovators and researchers; companies focused on digital media, content creation,
+              and multimedia production, utilizing the space for both creation and collaboration; and architecture,
+              construction and design firms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="technology-hub" class="building-section" style="position: relative; padding: 20px; text-align: center;">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8" style="padding: 10px;">
+            <div id="technologyHubCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="assets/img/the-ecosystem/technology-hub.webp" class="glightbox" data-gallery="technology-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/technology-hub.webp" class="d-block w-100" alt="Technology Hub 1" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="assets/img/the-ecosystem/technohub3.png" class="glightbox" data-gallery="technology-hub-gallery" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                    <img src="assets/img/the-ecosystem/technohub3.png" class="d-block w-100" alt="Technology Hub 2" style="width: 100%; height: 450px; object-fit: cover; border-radius: 10px;">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#technologyHubCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#technologyHubCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 order-1" style="padding-left: 80px; padding-right: 80px; padding-top: 90px;">
+            <strong style="color: #C60001; font-size: 20px; font-style: bold;">TECHNOLOGY HUB</strong>
+            <p style="color: #005099; text-align: justify; padding-top: 20px; font-size: 14px; font-family: 'Poppins', sans-serif;">
+              The five-storey Technology Hub at BatStateU KIST Park houses industry locators that promote innovation,
+              research, and entrepreneurial growth across diverse tech sectors.
+              <br> <br>
+              It is expected that high impact researches and sustainable extension services shall arise giving birth the
+              publications, patents and products commercialized. This will also serve as the training ground for budding
+              startups.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="smart-manufacturing" class="building-section" style="position: relative; padding: 20px; text-align: center;">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-md-8 order-md-2 order-1" style="padding: 30px;">
+            <img src="assets/img/the-ecosystem/smart-hub.webp" alt="STEER Hub"
+              style="width: 100%; border-radius: 10px;">
+          </div>
+          <div class="col-lg-4 order-md-1 order-2" style="padding: 30px;">
+            <strong style="color: #C60001; font-size: 20px; font-style: bold;">SMART MANUFACTURING HUB</strong>
+            <p style="color: #005099; text-align: justify; padding-top: 20px; font-size: 14px; font-family: 'Poppins', sans-serif;">
+              The seven-storey Smart Manufacturing Hub
+              features high-tech workspaces, industry-grade
+              prototyping labs, and smart production areas for
+              advanced manufacturing and industrial
+              transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovation-hub" class="building-section" style="position: relative; padding: 20px; text-align: center;">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8" style="padding: 10px;">
+            <img src="assets/img/the-ecosystem/innovation-hub.webp" alt="STEER Hub"
+              style="width: 100%; border-radius: 10px;">
+          </div>
+          <div class="col-lg-4 order-1" style="padding-left: 80px; padding-right: 80px; padding-top: 90px;">
+            <strong style="color: #C60001; font-size: 20px; font-style: bold;">INNOVATION HUB</strong>
+            <p style="color: #005099; text-align: justify; padding-top: 20px; font-size: 14px; font-family: 'Poppins', sans-serif;">
+              The ten-storey Innovation Hub features a 2,000-person
+              convention center for industry events, a hotel for
+              accommodations for innovators and professionals,
+              and dedicated spaces for industry locators and commercial spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Application and Approval Section -->
+    <section class="application-process" style="position: relative; padding: 20px; text-align: center;">
+      <div class="app-container" data-aos="fade-up">
+        <div class="container section-title" data-aos="fade-up"
+          style="display: flex; align-items: center; padding-bottom: 0px; flex-direction: row;">
+          <h2
+            style="color: #005099; text-align: left; white-space: normal; margin-right: 20px; font-size: clamp(1.5rem, 4vw, 2rem);">
+            Application and Approval
+          </h2>
+          <div style="flex-grow: 1; height: 3px; background-color: #005099; margin-bottom: 10px;"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Step 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 1</span>
+              <h3>Initial Engagement & Company Introduction</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Understand company profile and potential synergies.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. Introduce the company and coordinate a facility tour.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 2</span>
+              <h3>Invitation for Site Facility Tour</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Showcase university facilities and spaces to align with industry locator needs.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. During the visit, confirm the potential space allocation.</li>
+                  <li>b. Discuss prospective collaboration opportunities and the shared benefits of locating at BatStateU KIST Park.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 3</span>
+              <h3>Initial Submission of Required Documents</h3>
+              <p class="objective"><strong>Objective:</strong> To formalize the intention to locate, the interested locator submits: </p>
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. Letter of Intent (indicating space preference).</li>
+                  <li>b. Planned Business Activities at KIST Park (e.g., R&D, administrative operations, mass production, etc.), including the planned equipment and machinery to be installed within the premises.</li>
+                  <li>c. Proposed Engagement with the University</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 4</span>
+              <h3> Review and Issuance of Certification as Eligible Industry Locator</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Secure eligibility as industry locator and confirm pricing.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. The Facility Manager reviews all submitted documents to assess the company’s eligibility based on BatStateU’s evaluation criteria. The appropriate pricing will be determined by BatStateU, taking into account the company’s level of engagement.</li>
+                  <li>b. Following a favorable evaluation, KIST Park issues an Acceptance Letter with Notice to Proceed for SEC and BIR Registration through a formal letter.</li>
+                  <li>c. The Certificate of Eligibility shall be issued once SEC registration is completed.</li>
+                  <li>d. The locator may begin working on other PEZA requirements. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 5</span>
+              <h3> Preparation and Signing of the Memorandum of Agreement (MOA)</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Formalize the partnership and outline lease and collaboration terms.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. Draft and notarize the MOA (including the agreed lease start date, to be duly communicated to PEZA).</li>
+                  <li>b. Attach the following documents: <br> i.SEC Registration and Updated Articles of Incorporation; <br> ii. BIR FORM 2303; <br> iii.Secretary's Certificate to duly-authorized representative/s (if applicable)
+                    <br> iv. Business Permit/ Mayors Permit(if applicable) <br>v. Existing PEZA Registration (if applicable).</li>
+                    <li>Note: The notarized MOA forms part of the PEZA registration requirements.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 6 -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 6</span>
+              <h3>Finalization and Operationalization</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Establish the company’s presence and operations with the University.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. The locator shall complete the submission of all PEZA documentary requirements and comply with all applicable conditions to secure PEZA registration.</li>
+                  <li>b. The space shall be handed over to the locator for fit-out and operational setup.</li>
+                  <li>c. Rental shall commence based on the agreed lease start date.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Step 7 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="step-badge">STEP 7</span>
+              <h3>Monitoring and Evaluation</h3>
+              <!-- <p class="objective"><strong>Objective:</strong> Ensure continuous alignment and successful partnership.</p> -->
+              <div class="action-items">
+                <strong>Action Items:</strong>
+                <ul>
+                  <li>a. Conduct regular meetings.</li>
+                  <li>b. Evaluate the impact of the industry locator’s presence.</li>
+                  <li>c. Address issues promptly.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section" style="color: #005099">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #005099; text-align: left;">Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item" style="padding-top: 10px;">
+                <h3>1. What Is KIST Park?</h3>
+                <div class="faq-content">
+                  <p>In general, KIST Park was initiated by the Philippine Economic Zone Authority (PEZA) as a new form
+                    of special economic zones that will allow state universities and colleges (SUCs) to maximize large
+                    areas of idle land in their landholdings. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>2. How was BatStateU KIST Park established as a PEZA-registered Special Economic Zone?
+                </h3>
+                <div class="faq-content">
+                  <p>On May 22, 2020, former President Rodrigo Roa Duterte signed Proclamation No. 976, officially
+                    designating a parcel of land within Batangas State University (BatStateU) as a Special Economic
+                    Zone, to be known as the BatStateU Knowledge, Innovation, and Science Technology (KIST) Park. With
+                    this designation, BatStateU KIST Park became a PEZA-registered economic zone, opening opportunities
+                    for businesses, industry locators, and research institutions to operate within a globally
+                    competitive innovation ecosystem while benefiting from investment incentives and fostering
+                    technology commercialization and industry-academe collaboration.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>3. What is BatStateU KIST Park in a nutshell?
+                </h3>
+                <div class="faq-content">
+                  <p>Batangas State University KIST Park is a special economic zone located in Batangas City,
+                    Philippines offering space for technology-based industry locators and providing access to top-tier
+                    talent and tailored innovation resources.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>4. Is BatStateU KIST Park currently accepting locators?
+                </h3>
+                <div class="faq-content">
+                  <p>BatStateU KIST Park is now welcoming industry locators at the Ventures Hub. Available are 18 and 36 sqm units. <br>
+                    <br> Plus! Reservations are officially open for future occupancy in the Design Innovation Building with 145sqm, 237sqm and 261sqm floor area. <br>
+                    <br>
+                    Interested locators may also request a guided site tour—just let us know ahead of time so we can arrange it properly.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>5. What types of locators does BatStateU KIST Park accommodate?
+                </h3>
+                <div class="faq-content">
+                  <p>BatStateU KIST Park primarily welcomes tech-based startup companies and R&D units, seeking not only
+                    locator spaces but also a strong innovation ecosystem to support their R&D and business development.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>6. What are the perks of being a BatStateU KIST Park locator?
+                </h3>
+                <div class="faq-content">
+                  <p>
+                    a) Enjoy PEZA Incentives – Access tax benefits, duty-free importation, and other government
+                    incentives exclusive to PEZA-registered enterprises. <br>
+                    b) Access to Innovation Resources – Utilize BatStateU’s cutting-edge R&D facilities and top-tier
+                    talent for research and product development.<br>
+                    c) Benefit from in-house programs, including the following Exclusive Startup Incubation Support:<br>
+
+                    Business development services<br>
+                    Mentorship and coaching<br>
+                    Networking and industry linkages<br>
+                    Legal and intellectual property support<br>
+
+                    <strong>
+                      Plus, even more opportunities!
+                    </strong>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>7. Do you have pricing for industry locators?
+                </h3>
+                <div class="faq-content">
+                  <p>Yes, pricing can be discussed further along with potential engagement activities.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+              <div class="faq-item">
+                <h3>8. Are engagement activities required?
+                </h3>
+                <div class="faq-content">
+                  <p>Absolutely! BatStateU KIST Park is more than just a space—it’s built on collaboration and
+                    innovation, promoting industry-academe collaboration.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+              <div class="faq-item">
+                <h3>9. What is the process for industry locators to set up at BatStateU KIST Park?
+                </h3>
+                <div class="faq-content">
+                  <p>It’s a simple three-step process:<br>
+                    a) Inquire – Share your company’s vision and explore opportunities through a guided site tripping.
+                    <br>
+                    b) Explore Synergy – Discuss potential collaborations and ensure alignment for mutual success. <br>
+                    c) Submit Requirements & Secure Your Spot – Once all plans and requirements are finalized, you can
+                    sign the agreement and officially secure your space.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>10. What are the requirements to be eligible as a KIST Locator?
+                </h3>
+                <div class="faq-content">
+                  <p>a) Letter of Intent to locate, including space preference <br>
+                    b) Company and Business Operations Overview<br>
+                    c) Business Registration<br>
+                    d) Certificate of Registration<br>
+                    e) Articles of Incorporation<br>
+                    f) Proposed programs and activities<br>
+                    g) Secretary’s Certificate for duly-authorized representative/s (if applicable)<br>
+                    h) Biodata of Principal Officers<br>
+                    i) PEZA Registration (BatStateU KIST Park can assist companies to register in PEZA)<br>
+                    j) Business Permit (if applicable)<br>
+                    k) Audited Financial Statements (if applicable)<br>
+                    l) Other documents as may be prescribed by BatStateU KIST Park</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+              <div class="faq-item">
+                <h3>11. Are industry locators required to be PEZA-Registered?
+                </h3>
+                <div class="faq-content">
+                  <p>Yes, since BatStateU KIST Park is a special economic zone, all industry locators must be
+                    PEZA-registered to qualify for incentives and fully operate within the zone.
+                    For more information visit <a href="https://www.peza.gov.ph/">https://www.peza.gov.ph/</a>.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+              <div class="faq-item">
+                <h3>12. What are the business classifications under PEZA?
+                </h3>
+                <div class="faq-content">
+                  <p>a.) Domestic Market Enterprise (DME) – Businesses that primarily sell goods or services within the
+                    Philippines and cater to the local market. <br>
+                    b.) Export-Oriented Enterprise (EOE) – Businesses that export at least 70% of their total production
+                    to foreign markets.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+
+    
+
+    <!-- Message from COO Section -->
+    <section class="Message">
+      <div class="outer-container" data-aos="fade-up">
+        <div class="middle-container">
+          <div class="orange-section"></div>
+          <div class="blue-section"><p style=" font-size: clamp(12px, 3vw, 16px); position: absolute; bottom: 5px; left: 20px; color: white; z-index: 1000; font-weight: bold;">From Vision to Venture in a Science-Driven Park</p></div>
+          <div class="left-box">
+            <div class="chief">
+              <picture>
+                <source media="(max-width: 768px)" srcset="assets/img/the-ecosystem/coo-message/Tirso(2).png">
+                <img src="assets/img/the-ecosystem/coo-message/Tirso.png" alt="Chief Operating Officer">
+              </picture>
+            </div>
+          </div>
+          <div class="right-container">
+            <div>
+                <div class="container section-title" data-aos="fade-up" style="display: flex; align-items: center; padding-bottom: 0px; flex-wrap: wrap;">
+                  <h2 style="color: #990000; text-align: left; white-space: normal; margin-right: 20px; font-size: clamp( 11px, 3vw, 20px);">Message from the Chief Operating Officer</h2>
+                  <div style="flex-grow: 1; height: 3px; background-color: #990000; margin-bottom: 20px; min-width: 50px;"></div>
+                </div>
+            </div>
+            <div class="small-box-container">
+              <div class="small-box">
+                <div class="kist-message">
+                  <p class="vision-text">"The vision for Batangas State University Knowledge, Innovation, and Science Technology (KIST) Park began as a seed of possibility—a strategic ambition to elevate BatStateU's role in national development through technological advancement and academic excellence.</p>
+                  
+                  <p class="vision-text">As a university deeply rooted in engineering and technology, we recognized that a dedicated Technopark would create unparalleled opportunities for synergy between academe and industry. Our journey began in 2016 with a series of strategic discussions, feasibility studies and rigorous planning efforts to turn this concept to life. The journey to be the Philippines' first KIST Park registered under PEZA was no easy feat, but it stands as a testament to our perseverance, dedication, and strategic vision.</p>
+                  
+                  <p class="vision-text">At BatStateU KIST Park, we believe that great ideas take shape through collaboration, innovation, and action—principles that are deeply embedded in our DNA. We can level the playing field for brilliant minds, partnering with academe to drive industry transformation. Our facilities, dynamic community, and access to top-tier talent create a strong ecosystem for turning bold ideas into marketable solutions.</p>
+                  
+                  <p class="vision-text">Together, we have created more than just a Technopark; we have built a legacy of excellence and opportunity that will empower future generations.<br>
+                  Welcome to your new office at BatStateU KIST Park."</p>
+                  <p class="vision-text"><i>Dr. Tirso A. Ronquillo</i><br>
+                    <b>Chief Operating Officer - KIST Park</b></p>
+
+                </div>
+              </div>
+              <div class="small-box">
+                <div class="kist-image">
+                  <img src="assets/img/the-ecosystem/coo-message/KIST Park Pitch Deck.webp" alt="KIST Park Pitch Deck">
+                </div>
+              </div>
+              
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Engage with Us Section -->
+    <section id="engage" class="section" style="background-color: #f8f9fa; padding: 80px 0;">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="row gy-5">
+          
+          <!-- Left Column: Content -->
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="pe-lg-5">
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 1rem;">
+                 <h2 style="color: #005099; font-weight: 800; margin: 0; font-size: clamp(28px, 5vw, 40px);">Engage with Us</h2>
+                 <div style="flex-grow: 1; height: 4px; background: linear-gradient(90deg, #005099, transparent); border-radius: 2px;"></div>
+              </div>
+              
+              <p style="color: #ff6f2b; font-size: 1.2rem; font-weight: 600; margin-bottom: 2rem;">
+                Highly flexible spaces available to accelerate the rapid growth of technology-based companies.
+              </p>
+
+              <div class="mb-4 p-4" style="background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 5px solid #c60001;">
+                <h5 style="color: #005099; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center;"><i class="bi bi-geo-alt-fill me-2" style="color: #c60001;"></i> Strategic Location</h5>
+                <ul style="list-style: none; padding: 0; color: #555; font-size: 0.95rem; line-height: 1.8; margin-bottom: 0;">
+                  <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success me-2 mt-1"></i> <span>Located near Batangas Port, the 2nd largest international port in the Philippines.</span></li>
+                  <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success me-2 mt-1"></i> <span>Nestled in the CALABARZON Region, the 2nd largest economic region by GDP.</span></li>
+                  <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success me-2 mt-1"></i> <span>Top location for Technology Transfer and commercialization.</span></li>
+                  <li class="d-flex"><i class="bi bi-check-circle-fill text-success me-2 mt-1"></i> <span>Adjacent to other technology parks, business hubs, and transport systems.</span></li>
+                </ul>
+              </div>
+
+              <div class="p-4 mt-4" style="background: linear-gradient(135deg, #005099 0%, #003366 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 80, 153, 0.2); color: white; position: relative; overflow: hidden;">
+                <!-- Decorative circle -->
+                <div style="position: absolute; top: -30px; right: -30px; width: 120px; height: 120px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
+                
+                <h5 style="color: white; font-weight: 700; margin-bottom: 10px; font-size: 1.25rem; position: relative; z-index: 1;">Become a Pioneering Locator</h5>
+                <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; margin-bottom: 20px; position: relative; z-index: 1;">Spaces are available for rent, with the option to customize arrangements to meet your specific needs.</p>
+                
+                <div class="d-flex gap-3 flex-wrap position-relative" style="z-index: 1;">
+                  <a href="https://forms.gle/ESWwnWUGmtKyj6FP8" target="_blank" class="btn btn-lg" style="background-color: #c60001; color: white; border-radius: 50px; padding: 10px 30px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border: none;">
+                    Inquire Here <i class="bi bi-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visuals (Map + Port Image) -->
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-12">
+                <div style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 300px; border: 4px solid white;">
+                   <div id="map" style="height: 100%; width: 100%;"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 250px; border: 4px solid white;">
+                  <img src="assets/img/discover/port.png" alt="Batangas Port" style="width: 100%; height: 100%; object-fit: cover;">
+                  <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 20px; color: white;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <i class="bi bi-ship" style="font-size: 1.8rem; color: #ff6f2b;"></i>
+                      <div style="text-align: left;">
+                        <h5 style="margin: 0; font-weight: 700; font-size: 1.1rem; line-height: 1.2;">Batangas International Port</h5>
+                        <p style="margin: 0; font-size: 0.85rem; opacity: 0.9;">Strategic proximity for global trade access</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Newsletter Section (Integrated at bottom) -->
+        <div class="row mt-5 justify-content-center">
+           <div class="col-lg-10">
+             <div style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+                <div style="flex: 1; min-width: 300px;">
+                  <h4 style="color: #005099; font-weight: 700; margin-bottom: 5px;">Stay Connected</h4>
+                  <p style="color: #666; margin: 0; font-size: 0.95rem;">Subscribe to our newsletter for the latest updates and opportunities.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email address" style="border-radius: 30px 0 0 30px; padding: 12px 20px; border: 1px solid #ddd; background-color: #f8f9fa;">
+                    <button class="btn" type="button" onclick="handleSubscribe()" style="background-color: #ff6f2b; color: white; border-radius: 0 30px 30px 0; padding: 12px 25px; font-weight: 600; border: none;">Subscribe</button>
+                  </div>
+                </div>
+             </div>
+           </div>
+        </div>
+
+        <!-- Find Your Space Section -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-10 text-center">
+            <h2 style="color: #005099; font-weight: 800; font-size: clamp(24px, 4vw, 36px); margin-bottom: 15px;">Find Your Space. Fast-Track Your Setup.</h2>
+            <p style="color: #555; font-size: 1.1rem; margin-bottom: 40px;">Your streamlined pathway to locating, onboarding, and operating inside KIST Park.</p>
+            
+            <div class="row g-2 g-md-4 find-space-row">
+              <!-- Step 1 -->
+              <div class="col-4">
+                <div class="step-card h-100 p-4" style="background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; border-bottom: 5px solid #005099; position: relative; overflow: hidden;">
+                  <div style="position: absolute; bottom: -25px; right: -10px; font-size: 180px; font-weight: 900; color: rgba(0, 80, 153, 0.08); line-height: 1; z-index: 0; user-select: none;">1</div>
+                  <div style="position: relative; z-index: 1;">
+                    <div class="mb-3 d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background: linear-gradient(135deg, #005099 0%, #003366 100%); border-radius: 50%; color: white; font-size: 28px; box-shadow: 0 5px 15px rgba(0, 80, 153, 0.3);">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h4 style="color: #005099; font-weight: 700; margin-bottom: 15px;">Inquire</h4>
+                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6;">Share your company’s vision, explore opportunities, and identify your space through a guided facility tour.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Step 2 -->
+              <div class="col-4">
+                <div class="step-card h-100 p-4" style="background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; border-bottom: 5px solid #c60001; position: relative; overflow: hidden;">
+                  <div style="position: absolute; bottom: -25px; right: -10px; font-size: 180px; font-weight: 900; color: rgba(198, 0, 1, 0.08); line-height: 1; z-index: 0; user-select: none;">2</div>
+                  <div style="position: relative; z-index: 1;">
+                    <div class="mb-3 d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background: linear-gradient(135deg, #c60001 0%, #900000 100%); border-radius: 50%; color: white; font-size: 28px; box-shadow: 0 5px 15px rgba(198, 0, 1, 0.3);">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h4 style="color: #005099; font-weight: 700; margin-bottom: 15px;">Explore Synergy</h4>
+                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6;">Discuss potential collaborations and ensure alignment for mutual success.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Step 3 -->
+              <div class="col-4">
+                <div class="step-card h-100 p-4" style="background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; border-bottom: 5px solid #ff6f2b; position: relative; overflow: hidden;">
+                  <div style="position: absolute; bottom: -25px; right: -10px; font-size: 180px; font-weight: 900; color: rgba(255, 111, 43, 0.08); line-height: 1; z-index: 0; user-select: none;">3</div>
+                  <div style="position: relative; z-index: 1;">
+                    <div class="mb-3 d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background: linear-gradient(135deg, #ff6f2b 0%, #e65100 100%); border-radius: 50%; color: white; font-size: 28px; box-shadow: 0 5px 15px rgba(255, 111, 43, 0.3);">
+                      <i class="bi bi-file-earmark-check"></i>
+                    </div>
+                    <h4 style="color: #005099; font-weight: 700; margin-bottom: 15px;">Submit & Secure</h4>
+                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6;">Once all plans and requirements are finalized, you can sign the agreement and officially secure your space.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="mt-5">
+              <h5 class="find-space-cta" style="color: #005099; font-weight: 700; margin-bottom: 20px; font-size: 1.25rem;">
+                Ready to find your innovative space? 
+                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8" target="_blank" style="color: #c60001; text-decoration: underline; transition: color 0.3s ease; font-weight: 800;">Inquire Now!</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Engage With US -->
+
+
+
+
+
+  </main>
+  <footer id="footer" class="footer" style="background-color: #005099;">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename" style="color: white;">KIST Park</span>
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/BatStateUKISTPark" style="color: white;"><i class="bi bi-facebook" style="font-size: 30px; padding: 5px;"></i></a>
+            <a href="https://www.linkedin.com/company/batstateu-kist-park/" style="color: white;"><i class="bi bi-linkedin" style="font-size: 30px; padding: 5px;"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <h3 style="color: white;">CONTACT US</h3>
+          <p style="color: white; padding-top: 10px;"><i class="bi bi-telephone"></i><span> (043) 425-0139 local 2400</span></p>
+          <p style="color: white;"><i class="bi bi-envelope"></i><span> kistpark@g.batstate-u.edu.ph</span></p>
+        </div>
+  
+        <div class="col-lg-4 col-md-12 footer-address">
+          <h3 style="color: white;">PHILIPPINES</h3>
+          <p class="d-flex" style="color: white; padding-top: 10px;">
+            <i class="bi bi-geo-alt" style="margin-right: 8px; margin-top: 4px;"></i>
+            <span>
+                Batangas State University Alangilan Campus <br>
+                Golden Country Homes, Alangilan, Batangas City, 4200
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4">
+      <p style="color: white;">© <span>Copyright</span> <strong class="px-1 sitename">BatStateU KIST Park</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/favicon.png" alt="KIST Park logo">
+  </div>
+
+
+
+  <!-- <script>
+    // Show the modal when the page loads
+    window.onload = function () {
+      const modal = document.getElementById("modalForm");
+      modal.style.display = "block";
+    };
+
+    // Close the modal when the close button is clicked
+    const closeModal = document.getElementById("closeModal");
+    closeModal.onclick = function () {
+      const modal = document.getElementById("modalForm");
+      modal.style.display = "none";
+    };
+
+    // Handle form submission
+    const userForm = document.getElementById("userForm");
+    userForm.onsubmit = function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const formData = new FormData(userForm);
+
+      // Convert FormData to JSON object
+      const data = {
+        affiliation: formData.get('affiliation'),
+        name: formData.get('name'),
+        email: formData.get('email'),
+        contactNumber: formData.get('contactNumber'),
+        address: formData.get('address'),
+        interests: formData.get('interests'),
+      };
+
+      // POST the form data to the backend
+      fetch('https://parallaxed.ph/ces2025/anatomy/api/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((result) => {
+          console.log('Success:', result);
+          alert('Form submitted successfully!'); // Show success message
+          document.getElementById("modalForm").style.display = "none"; // Close the modal
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('An error occurred while submitting the form. Please try again.');
+        });
+    };
+  </script> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jc_script.js"></script>
+  <script src="assets/js/addsubscribers.js"></script>
+
+</body>
+
+</html>

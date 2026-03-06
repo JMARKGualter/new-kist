@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Innovation Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+             /* Added fixed table layout */
+        }
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+        .header-row {
+            background-color: #8B0000;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .facebook-row {
+            background-color: #f2f2f2;
+        }
+        .link a {
+            color: #0645AD;
+            text-decoration: none;
+        }
+        .section-header {
+            background-color: #4682B4;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mandate-cell {
+            background-color: #4682B4;
+            color: white;
+            font-weight: bold;
+            width: 30%;
+            text-align: center;
+        }
+        .equipment-header {
+            background-color: #4682B4;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        /* Column widths */
+        table td:nth-child(1) {
+            width: 25%;
+        }
+        table td:nth-child(2) {
+            width: 50%;
+        }
+        table td:nth-child(3) {
+            width: 20%; /* Wider price column */
+            white-space: nowrap; /* Prevent text wrapping in price column */
+        }
+
+        @media screen and (max-width: 768px) {
+            .modal-container {
+                width: 95%;
+                margin: 0 auto;
+                box-shadow: none;
+            }
+            
+            .mandate {
+                flex-direction: column;
+            }
+            
+            .mandate-label {
+                width: 100%;
+                text-align: left;
+                padding: 5px 8px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 4px;
+            }
+            
+            /* Make tables scrollable on small screens */
+            .table-container {
+                overflow-x: auto;
+            }
+            
+            /* Adjust font sizes for better readability on mobile */
+            .modal-header {
+                font-size: 1.1rem;
+            }
+            
+            .social-link, .footnote {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Very small screens */
+        @media screen and (max-width: 480px) {
+            .modal-container {
+                width: 100%;
+                border-radius: 0;
+            }
+            
+            th, td {
+                padding: 3px;
+            }
+            
+            table {
+                font-size: 0.75rem;
+            }
+            
+            /* For mobile, wrap the table in a container to allow horizontal scrolling */
+            table {
+                table-layout: auto; /* Allow table to adjust based on content on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <td colspan="3" class="header-row">FOOD INNOVATION CENTER</td>
+            </tr>
+            <tr class="facebook-row">
+                <td colspan="3">Facebook Page: <a href="https://www.facebook.com/batstateu.fic">https://www.facebook.com/batstateu.fic</a></td>
+            </tr>
+            <tr>
+                <td class="mandate-cell">Mandate</td>
+                <td colspan="2">The BatStateU The NEU-FIC envisions to be the center of excellence in food research design but most specially to provide the MSMEs, faculty and student researchers the best support by offering quality services that would help them in achieving success on their end.</td>
+            </tr>
+            <tr>
+                <td class="equipment-header">Equipment</td>
+                <td class="equipment-header">Description</td>
+                <td class="equipment-header">Rental Fee (Php)</td>
+            </tr>
+            <tr>
+                <td>Blast Freezer</td>
+                <td>This type of freezer storage is designed to rapidly bring down the temperature of (usually) foodstuffs or fresh produce, freezing them very quickly.</td>
+                <td>₱350/hr</td>
+            </tr>
+            <tr>
+                <td>Chest Type Freezer</td>
+                <td>It is mainly designed for stocking frozen food products in massive quantities, and it also offers energy efficiency through its built-in sidewall insulation to hold their cold temperatures well for a longer period.</td>
+                <td>₱300/day</td>
+            </tr>
+            <tr>
+                <td>Egg Incubation</td>
+                <td>An apparatus used to create and provide ideal environmental conditions for hatching eggs, considering factors such as temperature, humidity, and egg positioning, which need to be controlled.</td>
+                <td>₱150/day</td>
+            </tr>
+            <tr>
+                <td>Freezer (Upright)</td>
+                <td>It is proficient at storing things and easily capable of maintaining and cooling the food items inside it.</td>
+                <td>₱100/day</td>
+            </tr>
+            <tr>
+                <td>Oven</td>
+                <td>A hollow chamber that provides a means of heating in a controlled way.</td>
+                <td>₱300/day</td>
+            </tr>
+            <tr>
+                <td>Sausage Stuffer</td>
+                <td>A kitchen tool designed to assist in stuffing sausages and holding sausage casings firmly in place while they are stuffed.</td>
+                <td>₱60/day</td>
+            </tr>
+            <tr>
+                <td>Sealing Machine</td>
+                <td>This machine will rapidly and securely seal various bag materials, providing outstanding strength and visual appeal.</td>
+                <td>₱250/day</td>
+            </tr>
+            <tr>
+                <td>Soft-Serve Ice Cream Machine</td>
+                <td>This machine works similarly to other ice cream machines—freezing the mixture in a cylindrical container while churning and keeping the ice crystals small with a beater.</td>
+                <td>₱100/hr</td>
+            </tr>
+            <tr>
+                <td>Spray Drying</td>
+                <td>It removes water from the product and turns liquid solution into dry powder.</td>
+                <td>₱2,000/day</td>
+            </tr>
+            <tr>
+                <td>UHT/HTST Pasteurization with Automatic Filling and Capping Machine</td>
+                <td>Ultra-high temperature processing (UHT), ultra-heat treatment, or ultra-pasteurization is a food processing technology that sterilizes liquid food by heating it above 135°C (275°F) for 2 to 5 seconds, while HTST pasteurization (high temperature/short time) heats food to 60–90°C (140–194°F) for no greater than 15 seconds.</td>
+                <td>₱650/hr</td>
+            </tr>
+            <tr>
+                <td>Vacuum Fryer</td>
+                <td>This uses less oil and requires no preservatives. Vacuum-fried food products have reduced oil and water content, achieving a high-quality crisp texture while maintaining flavor consistency and color.</td>
+                <td>₱250/hr</td>
+            </tr>
+            <tr>
+                <td>Vacuum Sealer</td>
+                <td>The product is placed in an air-tight pack, the air is sucked out, and the package is sealed.</td>
+                <td>₱230/hr</td>
+            </tr>
+            <tr>
+                <td>Walk-in Chiller</td>
+                <td>Allows products to be stored at 4°C.</td>
+                <td>₱1,600/m²/day</td>
+            </tr>
+            <tr>
+                <td>Walk-in Freezer</td>
+                <td>Allows products to be stored at -18°C or below and maintained at an optimum condition.</td>
+                <td>₱2,200/m²/day</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

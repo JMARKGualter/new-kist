@@ -1,0 +1,8 @@
+fastapi
+sqlalchemy
+databases
+pydantic
+python-multipart
+Pillow
+mysqlclient
+pytz
