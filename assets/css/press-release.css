@@ -464,7 +464,7 @@ h3 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -474,7 +474,7 @@ h3 {
     z-index: 9997;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .navmenu ul {
@@ -567,11 +567,11 @@ h3 {
 
   /* Position and align Inquire button at the bottom */
   .navmenu > ul > li:nth-last-child(2) {
-    margin-top: auto;
+    margin-top: 10px;
     padding: 0;
     width: 100%;
-    background-color: #f8f9fa;
-    border-top: 1px solid  #f8f9fa;
+    background-color: transparent;
+    border-top: none;
     border-bottom: none;
   }
   .navmenu > ul > li:nth-last-child(2) h4 {
@@ -620,9 +620,9 @@ h3 {
   .navmenu .dropdown ul a.smart-manufacturing-mobile,
   .navmenu .dropdown ul a.innovation-center-mobile,
   .navmenu .dropdown ul a.press-release-mobile {
-    padding-left: 8%;
-    padding-bottom: 6px;
-    padding-top: 6px;
+    padding-left: 23px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     font-weight: 500;
   }
 
@@ -650,7 +650,7 @@ h3 {
     position: fixed;
     font-size: 32px;
     top: 15px;
-    right: 15px;
+    right: 20px;
     margin-right: 0;
     z-index: 9999;
   }

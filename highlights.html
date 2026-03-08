@@ -755,6 +755,22 @@
     }
   </style>
 
+  <script>
+    // Preloader removal script
+    const preloader = document.querySelector('#preloader');
+    if (preloader) {
+      window.addEventListener('load', () => {
+        preloader.remove();
+      });
+      // Fallback
+      setTimeout(() => {
+        if (document.body.contains(preloader)) {
+          preloader.remove();
+        }
+      }, 1000);
+    }
+  </script>
+
 </body>
 
 </html>

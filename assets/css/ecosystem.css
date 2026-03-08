@@ -615,7 +615,7 @@ h3 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -776,7 +776,7 @@ h3 {
   .navmenu .dropdown ul a.smart-manufacturing-mobile,
   .navmenu .dropdown ul a.innovation-center-mobile,
   .navmenu .dropdown ul a.press-release-mobile {
-    padding-left: 0%;
+    padding-left: 25px;
     padding-bottom: 0px;
     padding-top: 0px;
     font-weight: 500; 
@@ -806,7 +806,7 @@ h3 {
     position: fixed; /* Keep it fixed while scrolling sidebar */
     font-size: 32px;
     top: 15px;
-    right: 15px;
+    right: 20px;
     margin-right: 0;
     z-index: 9999;
   }
@@ -1684,12 +1684,12 @@ select {
 /* Specific view for 16:9 ratio mobile view (Android / 1080x1920px portrait) */
 @media screen and (max-width: 480px) {
   .hero {
-    height: 100vh; /* Adjust height to fit 16:9 screens better */
+    height: 30vh; /* Adjust height to fit 16:9 screens better */
   }
 
   .hero .carousel,
   .hero .carousel-item {
-    height: 85vh;
+    height: 30vh;
   }
 
   .hero-logo-center {
