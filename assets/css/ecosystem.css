@@ -318,6 +318,14 @@ h3 {
   .header .topbar .contact-info i span {
     font-size: 13px;
   }
+
+  .header .logo img {
+    height: 50px;
+  }
+
+  .header .branding {
+    min-height: 45px;
+  }
 }
 
 .header .topbar .contact-info i a {
@@ -343,15 +351,15 @@ h3 {
 
 .header .branding {
   min-height: 60px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .header .logo {
-  line-height: 1;
+  line-height: 1px;
 }
 
 .header .logo img {
-  /* max-height: 36px; */
+  max-height: 100px;
   margin-right: 8px;
 }
 
@@ -615,7 +623,7 @@ h3 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 20px;
+    margin-right: 23px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -627,6 +635,10 @@ h3 {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  .header .logo img {
+    height: 55px;
   }
 
   /* Style for the new mobile location icon */
@@ -644,8 +656,8 @@ h3 {
     list-style: none;
     position: fixed;
     top: 0;
-    right: -320px; /* Start off-screen, adjusted width */
-    width: 320px;
+    right: -280px; /* Start off-screen, adjusted width */
+    width: 280px;
     max-width: 85%; /* Ensure it's not too wide on small screens */
     height: 100vh;
     padding: 0; /* Remove top padding, header handles it */
@@ -656,6 +668,8 @@ h3 {
     z-index: 9998;
     box-shadow: -8px 0 25px rgba(0, 0, 0, 0.1);
     border-left: 6px solid #005099; /* Professional Accent Color */
+    background-image: none; /* Remove background image */
+    background-color: var(--nav-mobile-background-color); /* Ensure solid background color */
   }
 
   .navmenu a,
@@ -673,12 +687,12 @@ h3 {
   }
 
   .navmenu > ul > li {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f8f9fa;
   }
 
   /* Sidebar Header Style */
   .navmenu .sidebar-header {
-    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    background: linear-gradient(to right, #f8f9fa, #f8f9fa);
     border-bottom: 2px solid #005099;
     margin-bottom: 5px;
   }
@@ -724,7 +738,7 @@ h3 {
 
   /* Position and align Inquire button at the bottom */
   .navmenu > ul > li:nth-last-child(2) { /* Targets the Inquire button li */
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 0; /* Remove padding from li for consistent alignment */
     width: 100%;
     background-color: transparent;
@@ -746,13 +760,13 @@ h3 {
     display: none;
     z-index: 99;
     padding: 0;
-    margin: 0 20px 5px 20px;
+    margin: 0 15px 5px 15px;
     background-color: transparent;
     border: none;
     box-shadow: none;
     transition: all 0.5s ease-in-out;
     border-radius: 8px;
-    max-height: 250px; /* Limit height to prevent pushing other items off-screen */
+    max-height: 220px; /* Limit height to prevent pushing other items off-screen */
     overflow-y: auto; /* Enable scrolling for overflow content */
     scrollbar-width: thin; /* For Firefox */
   }
@@ -767,7 +781,7 @@ h3 {
   }
 
   .navmenu .dropdown ul a {
-    padding: 12px 25px; /* Equal interval and alignment */
+    padding: 8px 20px; /* Equal interval and alignment */
     font-size: 15px;
     justify-content: flex-start; 
     font-weight: 500;
@@ -775,8 +789,9 @@ h3 {
 
   .navmenu .dropdown ul a.smart-manufacturing-mobile,
   .navmenu .dropdown ul a.innovation-center-mobile,
-  .navmenu .dropdown ul a.press-release-mobile {
-    padding-left: 25px;
+  .navmenu .dropdown ul a.press-release-mobile,
+  .navmenu .dropdown ul a.peza-incentives-mobile {
+    padding-left: 0%;
     padding-bottom: 0px;
     padding-top: 0px;
     font-weight: 500; 
@@ -806,7 +821,7 @@ h3 {
     position: fixed; /* Keep it fixed while scrolling sidebar */
     font-size: 32px;
     top: 15px;
-    right: 20px;
+    right: 15px;
     margin-right: 0;
     z-index: 9999;
   }
@@ -1702,21 +1717,6 @@ select {
 
   .hero-static-content {
     bottom: 12%; /* Adjust button position */
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .header .logo img {
-    height: 8vh;
-    width: auto;
-  }
-
-  .location-icon-mobile img {
-    width: 50px;
-  }
-
-  .mobile-nav-toggle {
-    font-size: 36px;
   }
 }
 
@@ -5162,3 +5162,7 @@ section, .section {
     font-size: 14px !important;
   }
 }
+  
+  .find-space-cta {
+    font-size: 14px !important;
+  }
