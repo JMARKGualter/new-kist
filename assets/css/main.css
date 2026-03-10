@@ -5040,7 +5040,7 @@ dotlottie-player {
   font-style: italic;
   line-height: 1;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 13.5px;
 }
 
 .signature {
@@ -5067,6 +5067,8 @@ dotlottie-player {
   position: relative;
   z-index: 0;
   width: 100%;
+  size: 10vh;
+
 }
 
 .orange-section {
