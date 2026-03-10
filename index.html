@@ -46,6 +46,137 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .about-us .about-logo {
+      padding: 0;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      height: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+    .about-us .about-logo:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .about-us .about-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    .about-us .about-logo h3 {
+      color: #005099;
+      font-weight: 700;
+    }
+    .about-us .about-logo .logo-explanation {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .about-us .about-content .proclamation-text {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+      background: #f8f9fa;
+      padding: 15px;
+      border-left: 4px solid #005099;
+      border-radius: 5px;
+    }
+    .about-us .pillars-row {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .pillar-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      text-align: center;
+      height: 100%;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid #005099;
+    }
+    .pillar-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    .pillar-card .pillar-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px auto;
+      background: linear-gradient(135deg, #005099, #003366);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 16px rgba(0, 80, 153, 0.2);
+      transition: all 0.3s ease;
+    }
+    .pillar-card:hover .pillar-icon {
+      transform: scale(1.1);
+    }
+    .pillar-card h4 {
+      color: #005099;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .pillar-card p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .pillar-card.collaboration {
+      border-top-color: #c60001;
+    }
+    .pillar-card.collaboration .pillar-icon {
+      background: linear-gradient(135deg, #c60001, #900000);
+      box-shadow: 0 8px 16px rgba(198, 0, 1, 0.2);
+    }
+    .pillar-card.collaboration h4 {
+      color: #c60001;
+    }
+    .pillar-card.career {
+      border-top-color: #ff6f2b;
+    }
+    .pillar-card.career .pillar-icon {
+      background: linear-gradient(135deg, #ff6f2b, #e65100);
+      box-shadow: 0 8px 16px rgba(255, 111, 43, 0.2);
+    }
+    .pillar-card.career h4 {
+      color: #ff6f2b;
+    }
+    .vision-section {
+      background: linear-gradient(135deg, #005099 0%, #003366 100%);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0, 80, 153, 0.2);
+    }
+    .vision-title {
+      font-weight: 300;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.8);
+    }
+    .vision-statement {
+      font-weight: 700;
+      font-size: 28px;
+      font-style: italic;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+  </style>
 
 
   <!-- Google tag (gtag.js) -->
@@ -122,6 +253,7 @@
                 <span>The Technopark</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about-us">About Us</a></li>
                 <li><a class="dropdown-item" href="#ventures-hub">Ventures Hub</a></li>
                 <li><a class="dropdown-item" href="#design-innovation">Design Innovation Building</a></li>
                 <li><a class="dropdown-item" href="#technology-hub">Techno Hub</a></li>
@@ -210,7 +342,7 @@
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/kist-2.webp" alt="">
           <div class="hero-text-container">
-            <h2 class="typing-effect" style="--typing-width: 35.1ch; animation-timing-function: steps(38, end), step-end;">Transforming Knowledge into Technology</h2>
+            <h2 class="typing-effect" style="--typing-width: 35.1ch; animation-timing-function: steps(38, end), step-end;">Transforming Knowledge into <br class="d-sm-none"> Technology</h2>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -324,6 +456,63 @@
     </section>
 
     <!-- /Discover Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us section" style="background-color: #f8f9fa;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" style="padding-bottom: 30px;">
+          <h2 style="color: #005099; font-weight: 800;">About KIST Park</h2>
+          <p style="color: #555;">Bridging Academe and Industry for a Future of Innovation</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="about-logo mb-4">
+              <img src="assets/img/L.png" class="img-fluid" alt="KIST Park Logo">
+            </div>
+            <div class="about-content">
+              <p class="proclamation-text">
+                On May 22, 2020, Rodrigo R. Duterte signed Proclamation No. 947, officially designating KIST Park as a Special Economic Zone, enabling locators to register with the Philippine Economic Zone Authority and access investment incentives.
+              </p>
+              <p>
+                As a university-based technopark, BatStateU KIST Park ultimately bridges academe and industry across three key pillars:
+              </p>
+              
+              <div class="row gy-4 pillars-row">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="pillar-card">
+                    <div class="pillar-icon"><i class="bi bi-buildings"></i></div>
+                    <h4>Co-Location</h4>
+                    <p>Providing innovation spaces for companies to lease within the university ecosystem. BatStateU KIST Park is masterplanned by Palafox Associates, a globally recognized urban planning and architecture firm.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="pillar-card collaboration">
+                    <div class="pillar-icon"><i class="bi bi-people"></i></div>
+                    <h4>Collaboration</h4>
+                    <p>Enabling industry and academe to work together on research, technology development, and innovation initiatives. Beyond co-location, BatStateU KIST Park cultivates an ecosystem where collaboration generates impact.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="pillar-card career">
+                    <div class="pillar-icon"><i class="bi bi-briefcase"></i></div>
+                    <h4>Career Opportunities</h4>
+                    <p>Creating employment pathways and career opportunities for BatStateU students and graduates, with job generation as one of the key measurable impacts of industry presence within the technopark.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vision-section" data-aos="fade-up" data-aos-delay="400">
+                  <h3 class="vision-title">Our Vision</h3>
+                  <p class="vision-statement">"To empower innovation across academe and industry."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
 
     <!-- Industries We Serve Section -->
     <section id="industries-serve" class="industries-serve section">

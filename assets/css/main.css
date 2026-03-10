@@ -2069,11 +2069,11 @@ section, .section {
 /* Mobile portrait styles */
 @media screen and (max-width: 480px) {
   .hero {
-    height: 100vh;
+    height: 87vh;
   }
 
   .hero-logo-center {
-    top: 30%;
+    top: 15%;
     left: 28%;
     transform: translate(-50%, -50%);
   }
@@ -2084,7 +2084,7 @@ section, .section {
 
   .hero .carousel,
   .hero .carousel-item {
-    height: 100vh;
+    height: 87vh;
   }
 
   .hero .carousel-container {
@@ -2105,17 +2105,18 @@ section, .section {
   }
 
   .hero .carousel-item:nth-child(2) .typing-effect {
-    --typing-width: 26.09ch !important;
+    --typing-width: 26.2ch !important;
   }
   .hero .carousel-item:nth-child(3) .typing-effect {
-    --typing-width: 37.2ch !important;
+    --typing-width: 26.2ch !important;
+
   }
   .hero .carousel-item:nth-child(4) .typing-effect {
     --typing-width: 36.1ch !important;
     animation-timing-function: steps(38, end), step-end !important;
   }
   .hero .carousel-item:nth-child(5) .typing-effect {
-    --typing-width: 31.09ch !important;
+    --typing-width: 30.2ch !important;
   }
 
   .hero p {
@@ -2130,8 +2131,7 @@ section, .section {
   }
   
   .hero-text-container {
-    top: 55%;
-    top: 65%;
+    top: 45%;
   }
   
   .hero-static-content {

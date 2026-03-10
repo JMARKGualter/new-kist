@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /**
 * Template Name: Mamba
 * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
@@ -5167,7 +5167,7 @@ section, .section {
   .find-space-cta {
     font-size: 14px !important;
   }
-=======
+
 /**
 * Template Name: Mamba
 * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
@@ -5961,7 +5961,7 @@ h3 {
   .navmenu .dropdown ul a.innovation-center-mobile,
   .navmenu .dropdown ul a.press-release-mobile,
   .navmenu .dropdown ul a.peza-incentives-mobile {
-    padding-left: 0%;
+    padding-left: 8%;
     padding-bottom: 0px;
     padding-top: 0px;
     font-weight: 500; 
@@ -6809,11 +6809,26 @@ select {
     margin-bottom: 10px;
   }
 
+  .hero .carousel-item:nth-child(1) .typing-effect {
+    --typing-width: 29.4ch !important;
+  }
   .hero .carousel-item:nth-child(2) .typing-effect {
-    --typing-width: 28.09ch !important;
+    --typing-width: 27.4ch !important;
   }
   .hero .carousel-item:nth-child(3) .typing-effect {
-    --typing-width: 23.2ch !important;
+    --typing-width: 23.4ch !important;
+  }
+  .hero .carousel-item:nth-child(4) .typing-effect {
+    --typing-width: 29.4ch !important;
+  }
+  .hero .carousel-item:nth-child(5) .typing-effect {
+    --typing-width: 27.4ch !important;
+  }
+  .hero .carousel-item:nth-child(6) .typing-effect {
+    --typing-width: 23.4ch !important;
+  }
+  .hero .carousel-item:nth-child(7) .typing-effect {
+    --typing-width: 29.4ch !important;
   }
  
 
@@ -6833,67 +6848,11 @@ select {
   }
  
 }
-/* Mobile portrait styles */
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 30vh;
-  }
-
-  .hero .carousel,
-  .hero .carousel-item {
-    height: 30vh;
-  }
-
-  .hero .carousel-container {
-    padding-left: 20px;
-    padding-right: 15px;
-  }
-
-  .hero h2 {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  .hero .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 100%;
-  }
-}
-
-/* Specific view for 16:9 ratio mobile view (Android / 1080x1920px portrait) */
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 30vh; /* Adjust height to fit 16:9 screens better */
-  }
-
-  .hero .carousel,
-  .hero .carousel-item {
-    height: 30vh;
-  }
-
-  .hero-logo-center {
-    top: 30%; /* Adjust logo vertical position */
-  }
-
-  .hero-text-container {
-    top: 55%; /* Adjust text vertical position */
-  }
-
-  .hero-static-content {
-    bottom: 12%; /* Adjust button position */
-  }
-}
 
 /* Handle very small screens */
 @media screen and (max-width: 320px) {
   .hero {
-    height: 30vh;
+    height: 83vh;
   }
   .hero .carousel-container {
     padding-left: 15px;
@@ -6902,7 +6861,7 @@ select {
 
   .hero .carousel,
   .hero .carousel-item {
-    height: 30vh;
+    height: 83vh;
   }
 
   .hero h2 {
@@ -10336,4 +10295,3 @@ section, .section {
   .find-space-cta {
     font-size: 14px !important;
   }
->>>>>>> c8d16da980867967d12b5ec4a9d5878a9dd4b594
