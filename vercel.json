@@ -8,6 +8,10 @@
     {
       "src": "assets/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "blogs/**/*.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -16,14 +20,57 @@
       "dest": "/index.html"
     },
     {
+      "src": "/highlights",
+      "dest": "/highlights.html"
+    },
+    {
+      "src": "/the-ecosystem",
+      "dest": "/the-ecosystem.html"
+    },
+    {
+      "src": "/the-impact",
+      "dest": "/the-impact.html"
+    },
+    {
+      "src": "/press-releases",
+      "dest": "/press-releases.html"
+    },
+    {
+      "src": "/blogs/(.*)",
+      "dest": "/blogs/$1"
+    },
+    {
+      "src": "/blog/(.*)",
+      "dest": "/blogs/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/services/(.*)",
+      "dest": "/services/$1"
+    },
+    {
       "src": "/(.*)\\.html",
       "dest": "/$1.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/$1.html"
+      "dest": "/$1"
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
 }
