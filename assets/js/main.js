@@ -520,6 +520,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.addEventListener('scroll', updateBackground);
+  window.addEventListener('scroll', throttle(updateBackground, 250));
   updateBackground(); // Initial call
 });
 

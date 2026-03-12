@@ -2298,44 +2298,120 @@ section, .section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about h3 {
-  font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.about .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding: 0 0 10px 30px;
+/*--------------------------------------------------------------
+# About Us Section Enhancements
+--------------------------------------------------------------*/
+.about-us {
   position: relative;
+  overflow: hidden;
 }
 
-.about .content ul i {
+.about-us .section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* REMOVED: The underline effect that appears on hover */
+/* .about-us .section-title h2:after {
+  content: '';
   position: absolute;
-  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c60001, #005099);
+  transition: width 0.3s ease;
+}
+
+.about-us:hover .section-title h2:after {
+  width: 80px;
+} */
+
+/* Pillar Cards - Your existing styles plus these enhancements */
+.about-us .pillar-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.about-us .pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
   left: 0;
-  top: -3px;
-  color: var(--accent-color);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(198,0,1,0.05) 0%, rgba(0,80,153,0.05) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.about-us .pillar-card:hover::before {
+  opacity: 1;
 }
 
-.about .pulsating-play-btn {
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
+.about-us .pillar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 80, 153, 0.15);
 }
 
+/* Proclamation wrapper animation */
+.proclamation-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proclamation-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Bridge text styling */
+.bridge-text-wrapper p {
+  position: relative;
+  display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us .vision-statement {
+    font-size: 24px !important;
+  }
+  
+  .proclamation-wrapper {
+    padding: 30px 20px !important;
+  }
+  
+  .proclamation-wrapper p {
+    font-size: 16px !important;
+  }
+  
+  .bridge-text-wrapper p {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us .vision-statement {
+    font-size: 20px !important;
+  }
+  
+  .proclamation-wrapper {
+    padding: 25px 15px !important;
+  }
+  
+  .proclamation-wrapper p {
+    font-size: 15px !important;
+  }
+  
+  .bridge-text-wrapper p {
+    font-size: 16px !important;
+  }
+}
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
@@ -4245,6 +4321,64 @@ h1 {
 /*--------------------------------------------------------------
 # Bulding Section
 --------------------------------------------------------------*/
+
+.property-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 80, 153, 0.12);
+  border: 1px solid rgba(0, 80, 153, 0.1);
+}
+
+.property-table tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.property-table tr:nth-child(even) {
+  background-color: #f8fafc !important; /* Light grey-blue for even rows */
+}
+
+.property-table tr:nth-child(odd) {
+  background-color: #ffffff !important; /* White for odd rows */
+}
+
+.property-table tr:hover {
+  background-color: #e6f0fa !important;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 80, 153, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.property-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid rgba(0, 80, 153, 0.08);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.property-table td:first-child {
+  font-weight: 700;
+  color: #005099;
+  width: 35%;
+  border-right: 1px solid rgba(0, 80, 153, 0.1);
+  background-color: inherit;
+  letter-spacing: 0.3px;
+}
+
+.property-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Table cell content styling */
+.property-table td:last-child {
+  color: #2c3e50;
+  font-weight: 500;
+}
 @media (min-width: 320px) and (max-width:768px) {
   .building-section .col-lg-4 {
     padding-left: 20px !important;
