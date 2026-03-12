@@ -84,6 +84,16 @@
     gtag('config', 'G-ES0PWB5CY5');
   </script>
 
+  <script>
+    // Faster preloader
+    document.addEventListener('DOMContentLoaded', () => {
+      const preloader = document.querySelector('#preloader');
+      if (preloader) {
+        preloader.classList.add('hidden');
+        preloader.addEventListener('transitionend', () => preloader.remove());
+      }
+    });
+  </script>
 
   <style>
     :root {
@@ -387,6 +397,10 @@
 </head>
 
 <body class="index-page">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/favicon.png" alt="KIST Park logo">
+  </div>
 
  <!-- Dynamic Background Container -->
   <div id="dynamic-background"></div>
@@ -630,9 +644,9 @@
             </div>
     
             <div class="mt-5">
-              <h5 class="find-space-cta" style="color: #005099; font-weight: 700; margin-bottom: 20px; font-size: 1.25rem;">
+              <h5 class="find-space-cta">
                 Ready to find your innovation space? 
-                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8" target="_blank" style="color: #c60001; text-decoration: underline; transition: color 0.3s ease; font-weight: 800;">Inquire Now!</a>
+                <a href="https://forms.gle/ESWwnWUGmtKyj6FP8" target="_blank">Inquire Now!</a>
               </h5>
             </div>
           </div>
@@ -783,9 +797,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader">
-    <img src="assets/img/favicon.png" alt="KIST Park logo">
-  </div>
+  <!-- The preloader is now handled by a script in the <head> for faster loading -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

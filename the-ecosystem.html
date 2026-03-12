@@ -28,11 +28,6 @@
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin=""/>
 
-   <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
- integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
- crossorigin=""></script>
-
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES0PWB5CY5"></script>
 <script>
@@ -45,6 +40,47 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/ecosystem.css" rel="stylesheet">
+  <style>
+    /* Preloader styles */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      overflow: hidden;
+      background: #fff;
+      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #preloader img {
+      width: 80px;
+      height: auto;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  <script>
+    // Faster preloader
+    document.addEventListener('DOMContentLoaded', () => {
+      const preloader = document.querySelector('#preloader');
+      if (preloader) {
+        preloader.classList.add('hidden');
+        preloader.addEventListener('transitionend', () => preloader.remove());
+      }
+    });
+  </script>
   <style>
     :root {
       --nav-dropdown-hover-color: #005099;
@@ -168,6 +204,10 @@
 
 
 <body class="index-page">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/img/favicon.png" alt="KIST Park logo">
+  </div>
 
   <!-- Dynamic Background Container -->
   <div id="dynamic-background"></div>
@@ -1453,8 +1493,10 @@
 
     </section><!-- /Faq Section -->
 
-         <!-- Find Your Space Section -->
-        <div class="row justify-content-center mt-5">
+    <!-- Find Your Space Section -->
+    <section class="section" style="background-color: #f8f9fa; padding-bottom: 60px;">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
             <h2 style="color: #005099; font-weight: 800; font-size: clamp(24px, 4vw, 36px); margin-bottom: 15px;">Find Your Space. Fast-Track Your Setup.</h2>
             <p style="color: #555; font-size: 1.1rem; margin-bottom: 40px;">Your streamlined pathway to locating, onboarding, and operating inside KIST Park.</p>
@@ -1504,7 +1546,7 @@
             </div>
     
             <div class="mt-5">
-              <h5 class="find-space-cta" style="color: #005099; font-weight: 700; margin-bottom: 20px; font-size: 1.25rem;">
+              <h5 class="find-space-cta" style="color: #005099; font-weight: 700; margin-bottom: 20px; font-size: 2.25rem;">
                 Ready to find your innovation space? 
                 <a href="https://forms.gle/ESWwnWUGmtKyj6FP8" target="_blank" style="color: #c60001; text-decoration: underline; transition: color 0.3s ease; font-weight: 800;">Inquire Now!</a>
               </h5>
@@ -1676,13 +1718,14 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader">
-    <img src="assets/img/favicon.png" alt="KIST Park logo">
-  </div>
+  <!-- The preloader is now handled by a script in the <head> for faster loading -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1694,85 +1737,6 @@
   <script src="assets/js/ecosystem.js"></script>
   <script src="assets/js/jc_script.js"></script>
   <script src="assets/js/addsubscribers.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var myCarousel = document.querySelector('#hero-carousel');
-      var carousel = bootstrap.Carousel.getOrCreateInstance(myCarousel);
-
-      var title = document.getElementById('hero-title');
-
-      myCarousel.addEventListener('slide.bs.carousel', function (e) {
-        var nextSlide = e.relatedTarget;
-        var newHeading = nextSlide.getAttribute('data-heading');
-        
-        if (newHeading) {
-            title.style.animation = 'none';
-            title.offsetHeight; /* trigger reflow */
-            title.innerHTML = newHeading;
-            title.style.animation = 'fadeInDown 1s both';
-        }
-      });
-
-      carousel.cycle();
-    });
-
-    // Dynamic Background Script
-    document.addEventListener('DOMContentLoaded', function() {
-      const bgDiv = document.getElementById('dynamic-background');
-      const images = [
-        'assets/img/kist/11-11.jpg',
-        'assets/img/kist/5.jpg',
-        'assets/img/kist/1.jpg'
-      ];
-      
-      // Preload images
-      images.forEach(src => {
-        const img = new Image();
-        img.src = src;
-      });
-
-      function updateBackground() {
-        const scrollPosition = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = scrollPosition / docHeight;
-        
-        // Divide page into 3 equal parts
-        let imgIndex = 0;
-        if (scrollPercent >= 0.66) {
-          imgIndex = 2;
-        } else if (scrollPercent >= 0.33) {
-          imgIndex = 1;
-        }
-        
-        const currentImage = `url('${images[imgIndex]}')`;
-        // Normalize quotes for comparison and update if changed
-        if (bgDiv.style.backgroundImage.replace(/"/g, "'") !== currentImage) {
-          bgDiv.style.backgroundImage = currentImage;
-        }
-      }
-
-      window.addEventListener('scroll', updateBackground);
-      updateBackground(); // Initial call
-    });
-  </script>
-
-  <script>
-    // Preloader removal script
-    const preloader = document.querySelector('#preloader');
-    if (preloader) {
-      window.addEventListener('load', () => {
-        preloader.remove();
-      });
-      // Fallback
-      setTimeout(() => {
-        if (document.body.contains(preloader)) {
-          preloader.remove();
-        }
-      }, 1000);
-    }
-  </script>
-
 </body>
 
 

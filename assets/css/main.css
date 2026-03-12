@@ -1238,6 +1238,21 @@ select {
   transform: scale(1.2);
 }
 
+/* Find Your Space CTA */
+.find-space-cta {
+  color: #005099;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.find-space-cta a {
+  color: #c60001;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  font-weight: 800;
+}
+
 /* Custom styles for Inquire Here button */
 .navmenu .inquire-btn::before {
   display: none !important;
